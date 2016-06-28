@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Built by Jinzhen for project showcases.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[jinzhenfanl@gmail.com](mailto:jinzhenfan@gmail.com)
+Email me at [jinzhenfanl@gmail.com](mailto:jinzhenfan@gmail.com)
