@@ -9,4 +9,4 @@ Built by Jinzhen for project showcases.
 
 ### Contact me
 
-Email me at [jinzhenfanl@gmail.com](mailto:jinzhenfan@gmail.com)
+Email me at [jinzhenfan@gmail.com](mailto:jinzhenfan@gmail.com)
