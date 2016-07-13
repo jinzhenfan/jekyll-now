@@ -3,7 +3,7 @@ layout: post
 title: Machine of Future?
 ---
 
-Guess what is the most useful skill I learned to survive in graduate school? Rendering by Keyshot. This helps me finish dozens of research proposals.
+Guess what is the most useful skill I learned to survive in graduate school? Rendering by Keyshot. This skill helped me finish dozens of research proposals.
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/microscope/6.74.jpg "Printing on a Microscope")
 
