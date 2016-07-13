@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My first award-winning piece of work!
+title: Machine of Future?
 ---
 
 Guess what is the most useful skill I learned to survive in graduate school? Rendering by Keyshot. This helps me finish dozens of research proposals.
