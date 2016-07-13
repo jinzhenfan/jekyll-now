@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Built by Jinzhen for project showcases.
+A mixed work portfolio of conceptual design, engineering, and visualization. 
+Built by Jinzhen for recording her own passion paths.
 
 
 ### Contact me
