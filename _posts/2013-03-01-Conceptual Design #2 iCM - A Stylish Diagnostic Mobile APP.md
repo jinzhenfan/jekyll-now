@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A taste of Chinese Ink Paiting Style 
+title: A taste of Chinese Ink Paiting Style #Design&Visual
 ---
 
 One day my advisor had this idea of developing a online real-time machine diagnostic APP working with someone in China. For all kinds of reasons, I was part of it. 
