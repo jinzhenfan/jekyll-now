@@ -3,9 +3,6 @@ layout: post
 title: Deep Learning for Predicting Sequence Specificities of DNA/RNA Binding Proteins
 ---
 
-
-
-![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/antibiotics/antibiotics.jpg "How much antibiotics is in your salmon?")
  
 Deep Learning for Predicting Sequence Specificities of DNA/RNA Binding Proteins
 Final Reports of Literature study
