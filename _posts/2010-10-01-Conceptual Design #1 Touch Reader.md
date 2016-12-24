@@ -7,3 +7,4 @@ This is a reading assistance tool for blind people. Our team won the 2010 Reddot
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/Reddot/touch reader1.jpg "Flyer")
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/Reddot/touch reader2.jpg "Demon")
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/Reddot/touch reader3.jpg "Design")
+test
