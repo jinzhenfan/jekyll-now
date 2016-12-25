@@ -1,10 +1,18 @@
 ---
 layout: post
-title: Deep Learning Literature Study #Design&Visual
+title: Deep Learning in Genomics
 ---
 
-Antibiotic overdoes has casued millions of infant death in Asia. The most common contamination sources are additive antibiotics in the feeding of live stocks, seafood, and vegetables. Although FDA has a regulation limit for antibiotic level in agricultural products, some studies claims that it is the food below the FDA limit levels that causes antimicrobial resistance through long term everyday exposure. For this reason, people are more and more concerned about food safety for their family. 
+## Deep Learning for Predicting Sequence Specificities of DNA/RNA Binding Proteins ##
+### Genomic Big Data Analysis | Dec 4, 2012
+
+The paper I want to review is named Predicting the Sequence Specificities of DNA- and RNA-binding Proteins by Deep Learning published on Nature Biotechnology 2015. I am personally interested in this article, because of two reasons. First, I recently worked with synthetic biologists to optimize the quantity of transcription factors, which belongs to DNA-binding proteins, and it helps me develop better understanding by studying the most advanced research about it. Second, I am curious about how to apply deep learning in DNA/RNA sequences in general, the advantages and obstacles. 
+Why deep learning?
+As a matter of fact, researchers has been exploring different methods for predicting sequence specificities of DNA/RNA binding proteins, such as MatrixREDUCE, MEMERIS, Covariance models, and RNAcontext, etc. Then what we can gain from this deep learning method? I summarize the following reasons:
+?	It outperforms all the aforementioned methods with both in vivo and in vitro datasets in predicting DNA- and RNA- binding protein specificities. 
+?	Ease of training across different measurement platforms, such as Protein-DNA Binding Microarray (PBM), Chromatin Immunoprecipitation (ChIP) Assays, and HT-SELEX. 
+?	Parameter tuning is automatic, more generic and less labor intensive for new datasets.
+How is Sequence Specificities Measured?
+Before taking a look into the model, one need to get a basic idea about how those input datasets are generated. 9-13
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/antibiotics/antibiotics.jpg "How much antibiotics is in your salmon?")
-
-This is a conceptual design of a antibiotic detection chip for your everyday food. We actually made it into an actual prototype with the technology of novel extracting, nanofibers and nanoprinting, magnifying the signal to a visually readable level. The idea is to get visual, instant, accurate antibiotic indexed on the chip simply with a piece of raw meat inserted into the syringes. As a matter of fact, we tested with salmon from Safeway and WholeFoods, and found the antibiotic level in the former one is detectable as 0.1 parts per billion, while nothing is detectable from the latter. when you see price differences of salmon from WholeFoods and Safeway, you will know some reasons. I built it in 3Dmax and rendered it with Keyshot toolbox. 
