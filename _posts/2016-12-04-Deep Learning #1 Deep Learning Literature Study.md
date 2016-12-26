@@ -85,9 +85,8 @@ The rectification and pooling steps are quite straightforward. A vector of thres
 
 This article has done a great job balancing the number of models, complexity of models and parallel computing. It is very helpful to learn the ways they pre-process sequence data, extract features, and calibrate the parameters. Later this model has been used in identifying diseases-related variants in the sequences of DNA- and RNA- binding proteins, setting a great example for applying deep learning models in biomedical research. 
 
-$111_1$
+$\111^1$
 
-$$111_1$$
 
-\(1_1\)
+\(1^1\)
 
