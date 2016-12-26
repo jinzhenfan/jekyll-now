@@ -126,8 +126,8 @@ This article has done a great job balancing the number of models, complexity of 
 2. Duda, R. O., Hart, P. E. & Stork, D. G. Pattern Classification (2nd Edition, 2000).
 3. Brivanlou AH, Darnell JE (Feb 2002). "Signal transduction and the control of gene expression". Science. 295 (5556): 813-8. 
 4. https://www.biostars.org/p/53590/
-5. RNA-Binding Proteins Impacting on Internal Initiation of Translation, Encarnaci¨®n Mart¨ªnez-Salas, Gloria Lozano, Javier Fernandez-Chamorro, Rosario Francisco-Velilla, Alfonso Galan and Rosa Diaz, Int. J. Mol. Sci. 2013, 14(11), 21705-21726, doi:10.3390/ijms141121705
-6. Direct measurement of DNA affinity landscapes on a high-throughput sequencing instrument Razvan Nutiu, Robin C Friedman, Shujun Luo, Irina Khrebtukova, David Silva, Robin Li, Lu Zhang, Gary P Schroth & Christopher B Burg, Nature Biotechnology, 29, 659-664 (2011) doi:10.1038/nbt.1882
+5. RNA-Binding Proteins Impacting on Internal Initiation of Translation, Encarnacion Martinez-Salas, Gloria Lozano, Javier Fernandez-Chamorro, Rosario Francisco-Velilla, Alfonso Galan and Rosa Diaz, Int. J. Mol. Sci. 2013, 14(11), 21705-21726, doi:10.3390/ijms141121705
+6. Direct measurement of DNA affinity landscapes on a high-throughput sequencing instrument Razvan Nutiu, Robin C Friedman, Shujun Luo, Irina Khrebtukova, David Silva, Robin Li, Lu Zhang, Gary P Schroth & Christopher B Burg, Nature Biotechnology, 29, 659-664 (2011), doi:10.1038/nbt.1882
 7. Stormo, G. DNA binding sites: representation and discovery. Bioinformatics 16, 16-23 (2000).
 8. Rohs, R. et al. Origins of specificity in protein-DNA recognition. Annu. Rev. Biochem. 79, 233-269 (2010).
 9. Kazan, H., Ray, D., Chan, E.T., Hughes, T.R. & Morris, Q. RNAcontext: a new method for learning the sequence and structure binding preferences of RNA-binding proteins. PLoS Comput. Biol. 6, e1000832 (2010).
