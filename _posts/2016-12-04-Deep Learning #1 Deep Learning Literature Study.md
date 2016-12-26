@@ -120,6 +120,7 @@ This article has done a great job balancing the number of models, complexity of 
 
 ### References: 
 
+$$
 1.Alipanahi, B., Delong, A., Weirauch, M. T., & Frey B. J., Nature Biotechnology 33, 831¨C838 (2015) doi:10.1038/nbt.3300
 2.Duda, R. O., Hart, P. E. & Stork, D. G. Pattern Classification (2nd Edition, 2000).
 3.Brivanlou AH, Darnell JE (Feb 2002). "Signal transduction and the control of gene expression". Science. 295 (5556): 813¨C8. 
@@ -134,3 +135,4 @@ This article has done a great job balancing the number of models, complexity of 
 12.Jolma, A. et al. Multiplexed massively parallel SELEX for characterization of human transcription factor binding specificities. Genome Res. 20, 861¨C873 (2010).
 13.http://www.creative-biogene.com/Services/Aptamers/Technology-Platforms.html
 
+$$
