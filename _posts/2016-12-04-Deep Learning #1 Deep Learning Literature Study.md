@@ -122,5 +122,5 @@ This article has done a great job balancing the number of models, complexity of 
 
 ### References 
 
-1. Alipanahi, B., Delong, A., Weirauch, M. T., & Frey B. J., Nature Biotechnology 33, 831,
+1. Alipanahi, B., Delong, A., Weirauch, M. T., & Frey B. J., Nature Biotechnology 33, 831 $¨C$ 838
 
