@@ -105,7 +105,7 @@ And all the rest $\Delta$ values can be calculated in a similar way. Eventually,
 
 ### Automatic Parameter Calibration
 
- 
+One important work before start training any new datasets, is to calibrate the parameters. In this article, the calibration step is fully automatic, and it turns out to work well with random initialization. Our parameters include motif length $m$, motif numbers $d$, learning rate $\eta$, Learning momentum, batch size, weight decay $\beta$, dropout expectation $\alpha$, etc.  
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/13.png)
 
