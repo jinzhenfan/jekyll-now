@@ -22,6 +22,6 @@ As a matter of fact, researchers has been exploring different methods for predic
 Before taking a look into the model, one need to get a basic idea about how those input datasets are generated.
 
 ^9-13^
-
+9~1~3
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/1.png "Experimental ways to collect DNA- RNA- binidng protein datasets")
