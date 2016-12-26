@@ -85,7 +85,7 @@ A recent enhancement of neural networks known as dropout is illustrated here. Th
 
 ### Training Objectives
 
-
+Our training objective is to minimize the following function $J$. This traning objective is a combination of loss function and $L1$ normalization of weight decays. It has a trend to minimize the weights in neural networks $\big( W, w \big)$ and motif arrays ($M$), by giving a penalty parameter $\beta$, unless the loss function is good enough to pay for the penalties. 
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/9.png)
 
