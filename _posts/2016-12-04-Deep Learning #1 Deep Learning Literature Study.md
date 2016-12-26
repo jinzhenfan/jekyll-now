@@ -118,8 +118,9 @@ In this article, separate models for over 2603 different protein binding data se
 
 This article has done a great job balancing the number of models, complexity of models and parallel computing. It is very helpful to learn the ways they pre-process sequence data, extract features, and calibrate the parameters. Later this model has been used in identifying diseases-related variants in the sequences of DNA- and RNA- binding proteins, setting a great example for applying deep learning models in biomedical research. 
 
+----
 ### References: 
 
-1.Alipanahi, B., Delong, A., Weirauch, M. T., & Frey B. J., Nature Biotechnology 33, 831¨C838 (2015) doi:10.1038/nbt.3300
+1. Alipanahi, B., Delong, A., Weirauch, M. T. & 
 
 
