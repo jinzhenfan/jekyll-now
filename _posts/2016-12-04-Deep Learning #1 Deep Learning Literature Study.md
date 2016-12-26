@@ -18,6 +18,7 @@ As a matter of fact, researchers has been exploring different methods for predic
 
 ### How is Sequence Specificities Measured?
 
-Before taking a look into the model, one need to get a basic idea about how those input datasets are generated. <sup>9-13</sup>
+<p>Before taking a look into the model, one need to get a basic idea about how those input datasets are generated.<sup>9-13</sup></p>
+
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/1.png "Experimental ways to collect DNA- RNA- binidng protein datasets")
