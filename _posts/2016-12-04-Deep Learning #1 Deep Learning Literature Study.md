@@ -69,7 +69,7 @@ A sequence of ATGG can be represented as a matrix $S$:
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/6.png)
 
- 
+The padded representation matrix $S$ is then convolved with a motif detector array of $m \times d$.
 
 ### Rectification and Pooling
 
