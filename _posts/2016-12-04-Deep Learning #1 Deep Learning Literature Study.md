@@ -10,7 +10,7 @@ category: Analysis
 
 The paper I want to review is named Predicting the Sequence Specificities of DNA- and RNA-binding Proteins by Deep Learning published on Nature Biotechnology 2015. I am personally interested in this article, because of two reasons. First, I recently worked with synthetic biologists to optimize the quantity of transcription factors, which belongs to DNA-binding proteins, and it helps me develop better understanding by studying the most advanced research about it. Second, I am curious about how to apply deep learning in DNA/RNA sequences in general, the advantages and obstacles.
 
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0$ and they are
+When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 $$
@@ -41,7 +41,7 @@ As a matter of fact, researchers has been exploring different methods for predic
 
 ### How is Sequence Specificities Measured?
 
-Before taking a look into the model, one need to get a basic idea about how those input datasets are generated.$^[9-13]$
+Before taking a look into the model, one need to get a basic idea about how those input datasets are generated. $^(9-13)$
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/1.png "Experimental ways to collect DNA- RNA- binidng protein datasets")
 
