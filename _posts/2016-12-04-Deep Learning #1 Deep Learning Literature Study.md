@@ -96,19 +96,5 @@ In this article, separate models for over 2603 different protein binding data se
 
 This article has done a great job balancing the number of models, complexity of models and parallel computing. It is very helpful to learn the ways they pre-process sequence data, extract features, and calibrate the parameters. Later this model has been used in identifying diseases-related variants in the sequences of DNA- and RNA- binding proteins, setting a great example for applying deep learning models in biomedical research. 
 
-### References: 
 
-1.Alipanahi, B., Delong, A., Weirauch, M. T., & Frey B. J., Nature Biotechnology 33, 831每838 (2015) doi:10.1038/nbt.3300
-2.Duda, R. O., Hart, P. E. & Stork, D. G. Pattern Classification (2nd Edition, 2000).
-3.Brivanlou AH, Darnell JE (Feb 2002). "Signal transduction and the control of gene expression". Science. 295 (5556): 813每8. 
-4.https://www.biostars.org/p/53590/
-5.RNA-Binding Proteins Impacting on Internal Initiation of Translation, Encarnaci車n Mart赤nez-Salas, Gloria Lozano, Javier Fernandez-Chamorro, Rosario Francisco-Velilla, Alfonso Galan and Rosa Diaz, Int. J. Mol. Sci. 2013, 14(11), 21705-21726, doi:10.3390/ijms141121705
-6.Direct measurement of DNA affinity landscapes on a high-throughput sequencing instrument Razvan Nutiu, Robin C Friedman, Shujun Luo, Irina Khrebtukova, David Silva, Robin Li, Lu Zhang, Gary P Schroth & Christopher B Burg, Nature Biotechnology, 29, 659 -664 (2011) doi:10.1038/nbt.1882
-7.Stormo, G. DNA binding sites: representation and discovery. Bioinformatics 16, 16每23 (2000).
-8.Rohs, R. et al. Origins of specificity in protein-DNA recognition. Annu. Rev. Biochem. 79, 233每269 (2010).
-9.Kazan, H., Ray, D., Chan, E.T., Hughes, T.R. & Morris, Q. RNAcontext: a new method for learning the sequence and structure binding preferences of RNA-binding proteins. PLoS Comput. Biol. 6, e1000832 (2010).
-10.Nutiu, R. et al. Direct measurement of DNA affinity landscapes on a high-throughput sequencing instrument. Nat. Biotechnol. 29, 659每664 (2011).
-11.Mukherjee, S. et al. Rapid analysis of the DNA-binding specificities of transcription factors with DNA microarrays. Nat. Genet. 36, 1331每1339 (2004).
-12.Jolma, A. et al. Multiplexed massively parallel SELEX for characterization of human transcription factor binding specificities. Genome Res. 20, 861每873 (2010).
-13.http://www.creative-biogene.com/Services/Aptamers/Technology-Platforms.html
 
