@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Deep learning for predicting sequence specificities of DNA/RNA binding proteins 
+category: Analysis
 ---
 
 This is a review of paper named Predicting the Sequence Specificities of DNA- and RNA-binding Proteins by Deep Learning published on Nature Biotechnology 2015.$^1$ I am personally interested in this article, because of two reasons. First, I recently worked with synthetic biologists to optimize the quantity of transcription factors, which belongs to DNA-binding proteins, and it helps me develop better understanding by studying the most advanced research about it. Second, I am curious about how to apply deep learning in DNA/RNA sequences in general, the advantages and obstacles.
