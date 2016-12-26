@@ -23,7 +23,6 @@ Before taking a look into the model, one need to get a basic idea about how thos
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/1.png "Experimental ways to collect DNA- RNA- binidng protein datasets")
 
-PBM utilizes microarray chips where an array of capture DNA strands is bound, typically labelled by probe molecules. ChIP methods works by forming and isolating immuno-complex at the binding sites, which works well in vivo. SELEX (systematic evolution of ligands by exponential enrichment) is a method to enrich small populations of bound DNAs from a random sequence pool by PCR amplification.
 
 ### Workflow
 
@@ -35,11 +34,9 @@ The overall workflow includes feed-forward stages and back-propagation stages. F
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/3.png)
 
-The first step is to convert the sequences in the datasets into proper mathematical representations. Let¡¯s say we have n sequences as inputs. In this step, extra padding of length m-1 is inserted at the head and tail of each sequence, permitting detection at extreme ends. m is the length of motifs. Meanwhile, the number of input sequences doubles. Because typically when one sequence is measured with high DNA- or RNA-binding affinity, we are not sure whether it is the given strand or its reverse strand that is dominating. Thus both given sequences and their reverse strands are used as inputs for the following steps. Mathematically, the conversion formula is: 
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/4.png)
 
-A sequence of ATGG can be represented as a matrix S:
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/5.png)
 
@@ -47,26 +44,17 @@ A sequence of ATGG can be represented as a matrix S:
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/6.png)
 
-
-
 ### Rectification and Pooling
-
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/7.png)
 
 ### Neural Network with Dropout
 
-
-
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/8.png)
 
 ### Training Objectives
 
-
-
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/9.png)
-
-
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/10.png)
 
@@ -74,21 +62,14 @@ A sequence of ATGG can be represented as a matrix S:
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/11.png)
 
-
-
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/12.png)
 
-
-
 ### Automatic Parameter Calibration
-
 
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/13.png)
 
 ### Dataset Sizes and Shortcomings
-
-
 
 ### Conclusion
 
