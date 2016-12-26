@@ -35,7 +35,7 @@ The overall workflow includes feed-forward stages and back-propagation stages. F
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/3.png)
 
-The first step is to convert the sequences in the datasets into proper mathematical representations. Let¡¯s say we have n sequences as inputs. In this step, extra padding of length m-1 is inserted at the head and tail of each sequence, permitting detection at extreme ends. m is the length of motifs. Meanwhile, the number of input sequences doubles. Because typically when one sequence is measured with high DNA- or RNA-binding affinity, we are not sure whether it is the given strand or its reverse strand that is dominating. Thus both given sequences and their reverse strands are used as inputs for the following steps. Mathematically, the conversion formula is:
+The first step is to convert the sequences in the datasets into proper mathematical representations. Let¡¯s say we have n sequences as inputs. In this step, extra padding of length m-1 is inserted at the head and tail of each sequence, permitting detection at extreme ends. m is the length of motifs. Meanwhile, the number of input sequences doubles. Because typically when one sequence is measured with high DNA- or RNA-binding affinity, we are not sure whether it is the given strand or its reverse strand that is dominating. Thus both given sequences and their reverse strands are used as inputs for the following steps. Mathematically, the conversion formula is
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/4.png)
 
