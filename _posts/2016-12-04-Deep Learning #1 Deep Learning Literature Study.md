@@ -3,6 +3,25 @@ layout: post
 title: Deep Learning in Genomics
 ---
 
+$$
+\begin{bmatrix}
+a & b\\
+c & d\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+e & f\\
+g & h\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+ae+bg & af+bh\\
+ce+dg & cf+dh\\
+\end{bmatrix}
+$$
+
+
+
 ## Deep Learning for Predicting Sequence Specificities of DNA/RNA Binding Proteins 
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/14.png)
@@ -85,24 +104,3 @@ The rectification and pooling steps are quite straightforward. A vector of thres
 
 This article has done a great job balancing the number of models, complexity of models and parallel computing. It is very helpful to learn the ways they pre-process sequence data, extract features, and calibrate the parameters. Later this model has been used in identifying diseases-related variants in the sequences of DNA- and RNA- binding proteins, setting a great example for applying deep learning models in biomedical research. 
 
-$\111^1$
-
-
-\(1^1\)
-
-$$
-\begin{bmatrix}
-a & b\\
-c & d\\
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-e & f\\
-g & h\\
-\end{bmatrix}
-=
-\begin{bmatrix}
-ae+bg & af+bh\\
-ce+dg & cf+dh\\
-\end{bmatrix}
-$$
