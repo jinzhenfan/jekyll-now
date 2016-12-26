@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Deep Learning in Genomics
+category: Analysis
 ---
 
 $$
