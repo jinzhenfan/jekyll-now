@@ -111,7 +111,7 @@ One important work before start training any new datasets, is to calibrate the p
 
 ### Dataset Sizes and Shortcomings
 
-In this article, separate models for over 2603 different protein binding data sets have been trained, the vast majority of which are large-scale ($\geq$ 10,000 sequences). 
+In this article, separate models for over 2603 different protein binding data sets have been trained, the vast majority of which are large-scale ($\geq$ 10,000 sequences). Each data set requires its own calibration phase involving 30 trials, so tens of thousands of models are trained in total. To train these models in reasonable time, a specialized GPU-accelerated implementation of DeepBind has been built. However, it poses a unique challenge because the DeepBind models are much smaller (16 motif detectors, 32 hidden units) than comparable models used in computer vision. Modern GPUs are single instruction multiple data (SIMD) architectures, and their speed only comes by massive data parallelism, not by faster calculations. A straightforward GPU implementation of neural networks will only bring speedups for very large models, but DeepBind models are not individually large. The speed of a GPU comes from all these units executing in parallel, but it can only do so if each job sent to the GPU has enough work to keep the majority of these computational units busy. To leverage the power of GPUs in small-model scenarios, DeepBind training on the GPU is accelerated by training several independent models at the same time on the same GPU.
 
 
 ### Conclusion
