@@ -111,6 +111,7 @@ One important work before start training any new datasets, is to calibrate the p
 
 ### Dataset Sizes and Shortcomings
 
+In this article, separate models for over 2603 different protein binding data sets have been trained, the vast majority of which are large-scale ($\geq$ 10,000 sequences). 
 
 
 ### Conclusion
