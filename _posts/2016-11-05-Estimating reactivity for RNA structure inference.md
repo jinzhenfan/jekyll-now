@@ -14,4 +14,47 @@ $$ \beta _k = max \Big( \frac{\frac{X_k}{\sum_{i=k}^{n+1} X_i}-\frac{Y_k}{\sum_{
 
 
 $$\beta_k = max \Big( \frac{ln(1+X_k)}{\frac{1}{n}\sum_{i=k}^{n+1} ln(1+X_i)}-\frac{ln(1+Y_k)}{\frac{1}{n} \sum_{i=k}^{n+1} ln(1+Y_i)}, 0 \Big),\qquad$$ (Ding et al.)
- 
+
+It is to be understood that the two formulas are motivated by differences in protocols. Aviran et al. derive their formula assuming that the data at hand is obtained by paired-end sequencing while Ding et al. optimize their formula for single-end sequencing. Additionally, note that the summations in Aviran et al.'s formula represent nucleotide-level coverage (or the number of reads mapping over a nucleotide) in respective channels while summations in Ding et al.'s formula represent overall coverage of transcript (or the total number of reads mapped to the transcript, with the addition of logarithmic transformation on read counts). 
+
+###Plotting of reactivity profiles
+
+In the first step, I wrote an R script to obtain reactivities using the two approaches, plot the reactivity profiles, and show that the two formulas yield different profiles. 
+```R
+readsData <- read.table("pT181_Sense_112_adducts.txt", header= TRUE)   
+readsData
+treated_data=readsData$treated_mods
+treated_data
+untreated_data=readsData$untreated_mods
+untreated_data
+N<-nrow(readsData)
+######Aviran's method#####
+sumX<-sum(treated_data)
+sumY<-sum(untreated_data)
+betaA <- 0
+for (i in 1:N){
+	estimate <- (treated_data[i]/sumX - untreated_data[i]/sumY)/(1-untreated_data[i]/sumY)
+	sumX <- sumX-treated_data[i]
+	sumY <- sumY-untreated_data[i]
+	betaA[i] <- max(estimate,0)
+}
+#####Ding's method######
+sumX<-sum(log(treated_data+1))
+sumX
+sumY<-sum(log(untreated_data+1))
+sumY
+betaD <- 0
+for (i in 1:N){
+	estimate <- log(treated_data[i]+1)*N/sumX - log(untreated_data[i]+1)*N/sumY
+	betaD[i] <- max(estimate,0)
+}
+
+plot(1:N, betaA, type="l", col = "red", xlab="Position",ylab="Reactivity")
+lines(1:N, betaD,  col = "blue")
+legend(20,1, c("Aviran", "Ding"),lty=c(1,1), col=c('red','blue'),cex=0.8,) 
+
+```
+
+####Reactivity profiles:
+
+![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/RNAseq/Reactivity4.jpeg)
