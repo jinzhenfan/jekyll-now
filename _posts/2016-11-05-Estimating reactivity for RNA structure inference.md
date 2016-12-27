@@ -97,7 +97,9 @@ Nucleotide-level coverage profile for (+) channel of provided dataset is plotted
 
 One thing we noticed is that, Ding's method applies log transformation on the data. One justification for log transformation in the formula is that, the large value variation can be minimized to a smaller range. 
 
+### Differences in paired-end and single-end sequencing approaches
 
+We noticed that these two articles uses single-end sequencing and paired-end sequencing respectively. While paired-end sequencing captures accurate information, single-end sequencing is cheaper. In considering the requirements for accurate single-end sequencing, size selection is essential. Length selection, which can be performed by gel electrophoresis or magnetic beads, will help reduce the noise level in the experiment. We can also improve the accuracy of single-end sequencing by increasing the number of biological replicates in the experiment--more biological replicates improves the measure of variation in the experiment, leading to more accurate results. Somewhat similarly, we can consider increasing the number of technical replicates. Here, it is key to use the same platform for all measurements, in order to minimize any biases or other effects that could arise upon alteration of the experimental setup. Finally, we can ensure the best accuracy for single-end sequencing by increasing the read depth in our experiment. Gathering more reads provides better coverage of the sample and will help minimize error in sequencing.
 
 
 
