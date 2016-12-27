@@ -17,9 +17,7 @@ $$\beta_k = max \Big( \frac{ln(1+X_k)}{\frac{1}{n}\sum_{i=k}^{n+1} ln(1+X_i)}-\f
 
 It is to be understood that the two formulas are motivated by differences in protocols. Aviran et al. derive their formula assuming that the data at hand is obtained by paired-end sequencing while Ding et al. optimize their formula for single-end sequencing. Additionally, note that the summations in Aviran et al.'s formula represent nucleotide-level coverage (or the number of reads mapping over a nucleotide) in respective channels while summations in Ding et al.'s formula represent overall coverage of transcript (or the total number of reads mapped to the transcript, with the addition of logarithmic transformation on read counts). 
 
-
-###Plotting of reactivity profiles
-
+### Plotting of reactivity profiles
 
 In the first step, I wrote an R script to obtain reactivities using the two approaches, plot the reactivity profiles, and show that the two formulas yield different profiles. 
 
@@ -59,7 +57,7 @@ legend(20,1, c("Aviran", "Ding"),lty=c(1,1), col=c('red','blue'),cex=0.8,)
 
 '''
 
-####Reactivity profiles:
+#### Reactivity profiles:
 
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/RNAseq/Reactivity4.jpeg)
