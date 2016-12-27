@@ -23,7 +23,7 @@ It is to be understood that the two formulas are motivated by differences in pro
 
 In the first step, I wrote an R script to obtain reactivities using the two approaches, plot the reactivity profiles, and show that the two formulas yield different profiles. 
 
-```R
+'''R
 
 readsData <- read.table("pT181_Sense_112_adducts.txt", header= TRUE)   
 readsData
@@ -57,7 +57,7 @@ plot(1:N, betaA, type="l", col = "red", xlab="Position",ylab="Reactivity")
 lines(1:N, betaD,  col = "blue")
 legend(20,1, c("Aviran", "Ding"),lty=c(1,1), col=c('red','blue'),cex=0.8,) 
 
-```
+'''
 
 ####Reactivity profiles:
 
