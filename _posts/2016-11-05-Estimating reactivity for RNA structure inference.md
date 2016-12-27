@@ -10,4 +10,8 @@ In this article, we utilized SHAPE-Seq data sets from a Nature Letter publicatio
 
 For any structure-profiling experiment, as described by Aviran et al., read mapping results can be tallied and summarized as stop counts for each nucleotide. Consider a transcript of length $n$. Let us label the nucleotides with indices 1 through $n$ with 1 being the 3' end. For this transcript, there will be $n+1$ count summaries for each of the experiment and control channel, also called as (+) channel and (-) channel, respectively. These counts can be denoted as $\big( X_1,X_2,..., X_n \big) $ for number of stops in (+) channel at nucleotides 1 through $n$ and similarly as $\big(Y_1,Y_2,... ,Y_n\big)$ for (-) channel. Let  $X_{n+1}$ and $Y_{n+1}$ represent the number of reads that map to the 5' end. Then, the two formulas to assess reactivity $\beta _k$ of a nucleotide $k$ are
 
+$$
+\beta _k = max \Big( \frac{1-1}{1-1} \Big), 
+$$
+
  
