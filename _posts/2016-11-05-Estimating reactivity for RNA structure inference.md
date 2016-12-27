@@ -22,7 +22,8 @@ It is to be understood that the two formulas are motivated by differences in pro
 In the first step, I wrote an R script to obtain reactivities using the two approaches, plot the reactivity profiles, and show that the two formulas yield different profiles. 
 
 
-'''R
+'''r
+
 readsData <- read.table("pT181_Sense_112_adducts.txt", header= TRUE)   
 readsData
 treated_data=readsData$treated_mods
