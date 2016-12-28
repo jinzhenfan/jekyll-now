@@ -197,3 +197,55 @@ $/ = "";
 ```
 
 somewhere in the program before the string is read.
+
+Finally, we will make it so that if a k-merthat is present in the database string is also in the query string in multiple locations, then a search should be made from each occurrence of the k-mer in the query string, spanning outward left and right of each occurrence. 
+
+```perl
+бн
+  if (! defined $kmerQ{$1}) {     
+    $kmerQ{$1} = [$i];                     # Use an array instead of a number to record the occurence of kmer in query sequence.
+   }
+    else { push (@{$kmerQ{$1}}, $i)}             # If the array already exists for a kmer, add additional position info into the array
+ $i++;
+ $Q = substr($Q, 1, length($Q) -1);
+}
+
+
+foreach $kmerkey (keys(%kmerQ)) {
+ print "The occurrence of string $kmerkey is in position",#print occurrence of all kmers in Q
+ join(" ", @{$kmerQ{$kmerkey}}), "\n";           #use @{hashtable{key}} to iterate through the array of each value
+}
+
+```
+
+### Congratulations, you made your own version of BLAST!
+
+Here is my outcomes:
+
+```
+Please input the name of a file to be read.
+Query2.txt
+wqsgqrwelalgrfwdylrwvqtqrwelalgrfwdylrwvqt
+Input the length of the window
+4
+Please input the threshold t for matching length.
+10
+
+A good HSP scoring 23 has been found in the following string:
+mkvlwaallvtflagcqakveqavetepepelrqqtewqsgqrwelalgrfwdylrwvqt
+lseqvqeellssqvtqelralmdetmkelkaykseleeqltpvaeetrarlskelqaaqa
+rlgadvlashgrlvqyrgevqamlgqsteelrvrlashlrklrkrllrvlashqkrlavy
+qagaregaerglsairerlgplveqgrvraatvgslagqplqeraqawgerlrarmeemg
+srtrdrldevkeqvaevrakleeqaqqirlvlashqarlkswfeplvedmqrqwaglvek
+
+A good HSP scoring 19 has been found in the following string:
+mkvlwaallvtflagcqakveqavetepepelrqqtewqsgqrwelalgrfwdylrwvqt
+lseqvqeellssqvtqelralmdetmkelkaykseleeqltpvaeetrarlskelqaaqa
+rlgadvlashgrlvqyrgevqamlgqsteelrvrlashlrklrkrllrvlashqkrlavy
+qagaregaerglsairerlgplveqgrvraatvgslagqplqeraqawgerlrarmeemg
+srtrdrldevkeqvaevrakleeqaqqirlvlashqarlkswfeplvedmqrqwaglvek
+
+Press any key to continue . . .
+
+```
+
