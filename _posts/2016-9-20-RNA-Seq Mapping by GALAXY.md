@@ -6,7 +6,7 @@ category: analysis
 
 In Genomic data analysis, new algorithms are coming out every day. We often hear about new topics on mapping algorithms such as TopHat, Cufflink, FASTAQ, and so on. However, for researchers, the problem is where to access these new algorithms and how to process their own datasets with them conveniently. 
 
-Now you have a shortcut in a software suite called **GALAXY**! 
+Now you have a shortcut in a software suite called [**GALAXY**](https://galaxyproject.org/)! 
 
 In this blog, I will walk you through GALAXY to analyze five RNA-Seq datasets. 
 
