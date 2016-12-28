@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RNA-Seq Mapping and Differentially Expression Analysis by Cuffdiff, EdgeR, and DESeq2 
+title: RNA-Seq Mapping by GALAXY
 category: analysis
 ---
 
