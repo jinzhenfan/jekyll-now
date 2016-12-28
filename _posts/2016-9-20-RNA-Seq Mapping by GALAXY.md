@@ -46,6 +46,8 @@ And the mapping of adrenal tissue data sets.
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/GALAXY/ss4.png)
 
+### Gene Differential Expression Analysis
+
 _Cufflink_ is performed subsequently to analyze assemble differential gene expressions based on these assembled transcripts. Comparing with Genome annotation of hg19 on the top, we can have a intuitive understanding of the differentially expressed genes in brain and adrenal data sets.
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/GALAXY/ss5.png)
