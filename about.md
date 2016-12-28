@@ -4,9 +4,8 @@ title: About
 permalink: /about/
 ---
 
-A mixed work portfolio of conceptual design, engineering, and visualization. 
-Built by Jinzhen for recording her own passion paths.
-
+Blogs for data mining, exploration, and visualization in genomics, bioinformatics, and sometimes social network. 
+Tools used is a mix of different coding languages, public available databases.
 
 ### Contact me
 
