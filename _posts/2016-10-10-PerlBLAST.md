@@ -201,7 +201,7 @@ somewhere in the program before the string is read.
 Finally, we will make it so that if a k-merthat is present in the database string is also in the query string in multiple locations, then a search should be made from each occurrence of the k-mer in the query string, spanning outward left and right of each occurrence. 
 
 ```perl
-бн
+...
   if (! defined $kmerQ{$1}) {     
     $kmerQ{$1} = [$i];                     # Use an array instead of a number to record the occurence of kmer in query sequence.
    }
