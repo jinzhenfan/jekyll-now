@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Blogs for data mining, exploration, and visualization in genomics, bioinformatics, and sometimes social network. 
-Tools used is a mix of different coding languages, public available databases.
+Tools used is a mix of different coding languages, and public available databases.
 
 ### Contact me
 
