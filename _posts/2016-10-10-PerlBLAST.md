@@ -180,7 +180,7 @@ Now we will alter the code so that HSP are not reported multiple times. We can d
 
 ```perl
   %stringhash=();
-бн..
+...
        if ($L>10 and ! defined $stringhash{$n+1})  {                    
          $stringhash{$n+1}=1; 
          print "A good HSP scoring $L has been found in the following string:\n\n"; 
