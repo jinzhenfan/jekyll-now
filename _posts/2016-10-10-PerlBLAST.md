@@ -23,7 +23,7 @@ In summary, when one want to explore distant evolutionary relationships of prote
 [Wikipedia](https://en.wikipedia.org/wiki/BLAST)
 
 
-### Create a PERL-BLAST algorithm
+### Query K-mer Hashing
 
 Here we will create a toy blast program that we will call **PERL-BLAST**. It will use the same principles as BLAST does, for finding seed words first (kmeres) and then extending them to find potential alignments. The elements of Perl that you will use include the substr function, the length function, data structures such as two-dimensional hashes and lists, the defined function. For better understanding, I encourage you to read any Perl book (like Johnson's) or online resource regarding these functions and data structures.
 
@@ -103,7 +103,9 @@ foreach $kmerkey (keys(%kmerQ)) {
 
 ```
 
-Successively read in one string at a time from a file called perlblastdata.txt, which is our sequence database.. When a string S is read in, scan through its 4-mers, using the same hash as before. 
+### Database K-mer Hashing
+
+Successively read in one string at a time from a file called perlblastdata.txt, which is our sequence database. When a string S is read in, scan through its 4-mers, using the same hash as before. 
 
 ```perl
 open IN, " testcase2.txt ";                   #Read in the database to be searched
@@ -130,8 +132,9 @@ while ( $S = <IN>) {                             # Read in one string S from the
 
 ```
 
+### Matching, Extending and Scoring
 
-Whenever a 4-mer in S is determined to be in Q, extract the location of the first occurrence of that 4-mer in Q. Then put the characters of Q and S in arrays (as we did in needleman.pl) so that you can examine individual characters. Then scan left from the k-mer in Q and in S, as long as you find matching characters. Repeat to the right. Let L denote the length of the whole match obtained in this way. If L is greater than 10, then print a message that a good HSP has been found between Q and S, and print S.Notice that the same HSP gets reported multiple times.
+Whenever a 4-mer in S is determined to be in Q, extract the location of the first occurrence of that 4-mer in Q. Then put the characters of Q and S in arrays (as we did in needleman.pl) so that you can examine individual characters. Then scan left from the k-mer in Q and in S, as long as you find matching characters. Repeat to the right. Let L denote the length of the whole match obtained in this way. If L is greater than 10, then print a message that a good HSP has been found between Q and S, and print S. Notice that the same HSP gets reported multiple times.
 
 ```perl
 foreach $kmerkey (keys(%kmerS)) {      
@@ -176,6 +179,9 @@ foreach $kmerkey (keys(%kmerS)) {
 
 ```
 
+
+### Remove Duplicated Scores
+
 Now we will alter the code so that HSP are not reported multiple times. We can do it using a hash called stringhash: Whenever PERL-BLAST finds a reportable substring in a database, starting at position \\$i (e.g. in the database string), it searches whether \\$stringhash{\\$i} is defined. If it is, it does not report the string again. Otherwise it assigns the string to \\$stringhash{\\$i} and reports the string.
 
 ```perl
@@ -189,6 +195,8 @@ Now we will alter the code so that HSP are not reported multiple times. We can d
 
 ```
 
+### Read in Paragrahs
+
 We would like to process strings that are more than a single line long. So in the file each string will be held in consecutive lines, with strings separated by blank lines. That is analogous to each string being a paragraph instead of just a single line. To read in a paragraph, put the following line
 
 
@@ -197,6 +205,8 @@ $/ = "";
 ```
 
 somewhere in the program before the string is read.
+
+### Upgrade to Multiple Matching
 
 Finally, we will make it so that if a k-merthat is present in the database string is also in the query string in multiple locations, then a search should be made from each occurrence of the k-mer in the query string, spanning outward left and right of each occurrence. 
 
