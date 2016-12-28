@@ -176,7 +176,7 @@ foreach $kmerkey (keys(%kmerS)) {
 
 ```
 
-Now we will alter the code so that HSP are not reported multiple times. We can do it using a hash called stringhash: Whenever PERL-BLAST finds a reportable substring in a database, starting at position \$i (e.g. in the database string), it searches whether \$stringhash{\$i} is defined. If it is, it does not report the string again. Otherwise it assigns the string to \$stringhash{\$i} and reports the string.
+Now we will alter the code so that HSP are not reported multiple times. We can do it using a hash called stringhash: Whenever PERL-BLAST finds a reportable substring in a database, starting at position \\$i (e.g. in the database string), it searches whether \\$stringhash{\\$i} is defined. If it is, it does not report the string again. Otherwise it assigns the string to \\$stringhash{\\$i} and reports the string.
 
 ```perl
   %stringhash=();
