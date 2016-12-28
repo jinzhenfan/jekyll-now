@@ -23,7 +23,8 @@ Once you are in the [mainpage](https://usegalaxy.org/), a list of operations/alg
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/GALAXY/ss1.png)
 
 Then we can start importing data and perform our own RNA-Seq gene differential expression analysis. 
-[Here is a link to my workflow](https://usegalaxy.org/u/galaxygirl/h/imported-rna-seq-exercise-datasets)
+
+[Here is a link to my workflow.](https://usegalaxy.org/u/galaxygirl/h/imported-rna-seq-exercise-datasets)
 
 ### Loading data and QC
 
@@ -53,7 +54,7 @@ Eventually, we can sort and filter on the top 100 DEG, to get novel transcripts 
 
 [Download the Top 100 DEG here.](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/GALAXY/Top100DEGCuffDiff.txt)
 
-
+Have fun working with differetial gene expression!
 
 
 
