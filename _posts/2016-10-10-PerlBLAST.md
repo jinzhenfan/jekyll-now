@@ -176,4 +176,24 @@ foreach $kmerkey (keys(%kmerS)) {
 
 ```
 
+Now we will alter the code so that HSP are not reported multiple times. We can do it using a hash called stringhash: Whenever PERL-BLAST finds a reportable substring in a database, starting at position $i (e.g. in the database string), it searches whether $stringhash{$i} is defined. If it is, it does not report the string again. Otherwise it assigns the string to $stringhash{$i} and reports the string.
 
+```perl
+  %stringhash=();
+бн..
+       if ($L>10 and ! defined $stringhash{$n+1})  {                    
+         $stringhash{$n+1}=1; 
+         print "A good HSP scoring $L has been found in the following string:\n\n"; 
+         print "$S";                                                  
+      }
+
+```
+
+We would like to process strings that are more than a single line long. So in the file each string will be held in consecutive lines, with strings separated by blank lines. That is analogous to each string being a paragraph instead of just a single line. To read in a paragraph, put the following line
+
+
+```perl
+$/ = "";
+```
+
+somewhere in the program before the string is read.
