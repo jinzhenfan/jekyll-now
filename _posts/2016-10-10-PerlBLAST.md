@@ -198,7 +198,7 @@ foreach $kmerkey (keys(%kmerQ)) {
 
 Here is my outcomes:
 
-```bash
+```
 Please input the name of a file to be read.
 Query2.txt
 wqsgqrwelalgrfwdylrwvqtqrwelalgrfwdylrwvqt
