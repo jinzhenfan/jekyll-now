@@ -1,0 +1,12 @@
+For the toy genbank, use the following five sequences for our toy database of sequences. That is, each sequence in the toy genbank is on a seperate line.
+
+mkvlwaallvtflagcqakveqavetepepelrqqtewqsgqrwelalgrfwdylrwvqt
+lseqvqeellssqvtqelralmdetmkelkaykseleeqltpvaeetrarlskelqaaqa
+rlgadvlashgrlvqyrgevqamlgqsteelrvrlashlrklrkrllrvlashqkrlavy
+qagaregaerglsairerlgplveqgrvraatvgslagqplqeraqawgerlrarmeemg
+srtrdrldevkeqvaevrakleeqaqqirlvlashqarlkswfeplvedmqrqwaglvek
+
+For the toy query sequence, use
+
+didyoseeasteelrvlashorwasitaflagthere
+

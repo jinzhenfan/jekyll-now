@@ -69,40 +69,6 @@ foreach $kmerkey (keys(%kmer)) {
 
 ```
 
-Then we change the direct input to reading in from a file a query string Q.
-
-```perl
-print "Please input the name of a file to be read.\n";
-$infile=<>;
-open IN, "$infile";
-$Q=<IN>;
-chomp $Q;
-print "$Q\n";
-```
-
-For k = 4, use program kmerfirst.pl to find the first location of each different k-mer in Q.
-
-```perl
-@string1 =  split(//, $Q);
-%kmerQ = ();               #Put the kmers in query string into a hash table %kmerQ.       
-$i = 1;
-while (length($Q) >= $k) {
-  $Q =~ m/(.{$k})/; 
-  print "$1, $i \n";
-  if (! defined $kmerQ{$1}) {     
-    $kmerQ{$1} = $i;                           
-   }
- $i++;
- $Q = substr($Q, 1, length($Q) -1);
-}
-
-
-foreach $kmerkey (keys(%kmerQ)) {
- print "The first occurrence of string $kmerkey is in position $kmerQ{$kmerkey}\n";          
-}
-
-```
-
 ### Database K-mer Hashing
 
 Then we need to successively read in one string at a time from a file called perlblastdata.txt, which is our sequence database. When a string S is read in, scan through its 4-mers, using the same hash as before. 
@@ -232,7 +198,7 @@ foreach $kmerkey (keys(%kmerQ)) {
 
 Here is my outcomes:
 
-```
+```shell
 Please input the name of a file to be read.
 Query2.txt
 wqsgqrwelalgrfwdylrwvqtqrwelalgrfwdylrwvqt
