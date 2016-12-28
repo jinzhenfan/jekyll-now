@@ -245,7 +245,7 @@ rlgadvlashgrlvqyrgevqamlgqsteelrvrlashlrklrkrllrvlashqkrlavy
 qagaregaerglsairerlgplveqgrvraatvgslagqplqeraqawgerlrarmeemg
 srtrdrldevkeqvaevrakleeqaqqirlvlashqarlkswfeplvedmqrqwaglvek
 
-Press any key to continue . . .
+Press any key to continue ...
 
 ```
 
