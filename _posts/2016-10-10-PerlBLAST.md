@@ -105,7 +105,7 @@ foreach $kmerkey (keys(%kmerQ)) {
 
 ### Database K-mer Hashing
 
-Successively read in one string at a time from a file called perlblastdata.txt, which is our sequence database. When a string S is read in, scan through its 4-mers, using the same hash as before. 
+Then we need to successively read in one string at a time from a file called perlblastdata.txt, which is our sequence database. When a string S is read in, scan through its 4-mers, using the same hash as before. 
 
 ```perl
 open IN, " testcase2.txt ";                   #Read in the database to be searched
