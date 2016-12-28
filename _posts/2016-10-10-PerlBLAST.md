@@ -69,3 +69,13 @@ foreach $kmerkey (keys(%kmer)) {
 
 ```
 
+Then we change the direct input to reading in from a file a query string Q.
+
+```perl
+print "Please input the name of a file to be read.\n";
+$infile=<>;
+open IN, "$infile";
+$Q=<IN>;
+chomp $Q;
+print "$Q\n";
+```
