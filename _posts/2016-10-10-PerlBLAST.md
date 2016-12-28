@@ -103,7 +103,7 @@ foreach $kmerkey (keys(%kmerQ)) {
 
 ```
 
-Successively read in one string at a time from a file called perlblastdata.txt.When a string S is read in, scan through its 4-mers, using the same hash as before. This is our sequence database.
+Successively read in one string at a time from a file called perlblastdata.txt. When a string S is read in, scan through its 4-mers, using the same hash as before. This is our sequence database.
 
 ```perl
 open IN, " testcase2.txt ";                   #Read in the database to be searched
@@ -124,7 +124,7 @@ while ( $S = <IN>) {                             # Read in one string S from the
   }
   
   foreach $kmerkey (keys(%kmerS)) {      
-     print ¡°$kmerkey is in position $kmerS{$kmerkey}¡±;
+     print "$kmerkey is in position $kmerS{$kmerkey}";
   }
 }
 
