@@ -10,12 +10,13 @@ Now you have a shortcut in a software suite called [**GALAXY**](https://galaxypr
 
 In this blog, I will walk you through GALAXY to analyze five RNA-Seq datasets. 
 
+### Overview
 
 The **GALAXY** Project is an open, web-based platform for data intensive biomedical research. Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses. It is supported in part by NHGRI, NSF, The Huck Institutes of the Life Sciences, The Institute for CyberScience at Penn State, and Johns Hopkins University. 
 
 The **datasets** we are using today are paired-end 50bp reads from adrenal and brain tissues (500Kb region of chromosome 19, chr19:3000000:3500000). The datasets contain the transcriptional profiles in those tissues and our task is to find genes that are differentially expressed (DEG) in the sample conditions versus the control sample. You can download the datasets [here](https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise). It is recommended to look through the tutorial in the same link for detailed steps. 
 
-### Overview
+### Layout
 
 Once you are in the [mainpage](https://usegalaxy.org/), a list of operations/algorithms are shown in the leftmost panel called tools. Once you click on any operation, it will pop up a setting windows. Once it is done, this operation will show up on the rightmost panel called History. 
 
