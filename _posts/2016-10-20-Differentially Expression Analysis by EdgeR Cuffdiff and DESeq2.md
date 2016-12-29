@@ -87,7 +87,7 @@ topTags( de.poi , n = 100 , sort.by = "logFC" )
 write.table(res_top, file = "EdgeROutput_top100.txt",
 append = FALSE, sep = "\t")
 ```
-Top 100 DEG generated can be found [here]().
+Top 100 DEG generated can be found [here](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/DEG/EdgeRTop100DEG.txt).
 
 ### DESeq2 DEG analysis
 First we need to setup a colData file for design formula in DeSeq2 analysis as follows:
@@ -137,7 +137,7 @@ write.table(res_top, file = "DeSeq2Output_ordered_top54.txt",
 append = FALSE, sep = "\t")
 ```
 
-My DESeq2 results of top 100 DEG can be found [here]().
+My DESeq2 results of top 100 DEG can be found [here](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/DEG/DeSeq2Output_ordered_top100.txt).
 
 ### Visualization by Venn Diagram
 
