@@ -8,7 +8,7 @@ In this blog, I will build a gene regulatory network from gene expression data u
 
 ### Datasets
 
-I use a dataset from a microarray experiment of _Escherichia coli K-12_ strain to investigate biofilm formation in the first 24 hours of the culture. You can [download the dataset here]().
+I use a dataset from a microarray experiment of _Escherichia coli K-12_ strain to investigate biofilm formation in the first 24 hours of the culture. You can [download the dataset here](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RF/GDS2768.csv).
 
 The paper that describes this experiment is the following:
 Domka J, Lee J, Bansal T, Wood TK. Temporal gene-expression in Escherichia coli K-12 biofilms. Environ Microbiol. 2007 Feb;9(2):332-46.
@@ -56,18 +56,15 @@ import pandas as pd
 df=pd.read_csv('GDS2768.csv',sep='\t',header=1)
 
 gene_names_Ecoli = list(df["ID_REF"])
-#gene_names = gene_names.rstrip('\n').split('\t')
 df1=df.ix[0:,2:]
 data_Ecoli=np.array(df1.transpose().as_matrix().tolist())
 tree_method = 'RF'
-#K = 7
-#ntrees = 50
 (VIM4, MSE_overall, treeEstimators) = genie3(data_Ecoli,tree_method=tree_method,compute_MSE=True)
 get_link_list(VIM4, gene_names=gene_names_Ecoli,file_name='ranking_ID_REF.txt')
 
 ```
 
-Here you can [download]() my report the top 100 interactions (i.e. source, target, type of edge) their score and the statistical significance of the score.
+Here you can [download](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RF/ranking_ID_REF_Top100.txt) my report the top 100 interactions (i.e. source, target, type of edge) their score and the statistical significance of the score.
 
 ### Functions of Regulating Genes
 
