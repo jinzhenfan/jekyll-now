@@ -17,13 +17,13 @@ And you can download it from:
 
 ### Random Forests
 
-The paper that describes how this method work has been published in PLoS One in 2010 and can be viewed here:
+Here I provide a step-by-step description of Random Forests, the basic machine learning method that powers the GENIE3 method. The paper that describes how GENIE3 work has been published in PLoS One in 2010 and can be viewed here:
 
 [http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0012776](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0012776)
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/RF/RF.png)
 
-This method makes the assumption that the expression of each gene in a given condition is a function of the expression of the other genes in the network (plus some random noise). Say we have p genes in the network: 
+This method makes the assumption that the expression of each gene in a given condition is a function of the expression of the other genes in the network (plus some random noise). Say we have $p$ genes in the network: 
 
 1. For $j$ =1 to $p$, 
 
@@ -34,8 +34,8 @@ This method makes the assumption that the expression of each gene in a given con
 	* Sample with replacement from the training set (B times); call these $X_b$, $Y_b$.
 	* Train a decision or regression tree fb on $X_b$, $Y_b$.
 	* At each candidate split in the learning process, a random subset of the features/attributes are selected. This process is sometimes called "feature bagging". In this case, different subsets of genes are selected.
-	* Different algorithms use different metrics as criteria to split at each nodes, such as, Gini Impurity and information gain. (One example of training decision trees based on information gain:
-[http://christianherta.de/lehre/dataScience/machineLearning/decision-trees.php](http://christianherta.de/lehre/dataScience/machineLearning/decision-trees.php))
+	* Different algorithms use different metrics as criteria to split at each nodes, such as, Gini Impurity and information gain. Below is one example of training decision trees based on information gain:
+[http://christianherta.de/lehre/dataScience/machineLearning/decision-trees.php](http://christianherta.de/lehre/dataScience/machineLearning/decision-trees.php)
 	* Generally, after training, predictions for unseen samples $x'$ can be made by averaging the predictions from all the individual regression trees on $x'$, or by taking the majority vote in the case of decision trees.
 
 	c.  In this case, for a single tree, the overall importance of one variable is then computed by summing the importance measure of all tree nodes where this variable is used to split. 
@@ -44,6 +44,35 @@ This method makes the assumption that the expression of each gene in a given con
 
 
 ### Gene Regulatory Network Inference using GENIE3
+
+Use the tool GENIE3, which can be downloaded from
+[http://homepages.inf.ed.ac.uk/vhuynht/software.html](http://homepages.inf.ed.ac.uk/vhuynht/software.html)
+
+My code Implementation:
+
+```python
+import numpy as np
+import sys
+sys.path.append("E:\\Program_Files\\Strawberry\\My_script\\HW4\\GENIE3_python\\GENIE3_python")
+from GENIE3 import *
+#from numpy import loadtxt
+
+import pandas as pd
+df=pd.read_csv('GDS2768.csv',sep='\t',header=1)
+
+gene_names_Ecoli = list(df["ID_REF"])
+#gene_names = gene_names.rstrip('\n').split('\t')
+df1=df.ix[0:,2:]
+data_Ecoli=np.array(df1.transpose().as_matrix().tolist())
+tree_method = 'RF'
+#K = 7
+#ntrees = 50
+(VIM4, MSE_overall, treeEstimators) = genie3(data_Ecoli,tree_method=tree_method,compute_MSE=True)
+get_link_list(VIM4, gene_names=gene_names_Ecoli,file_name='ranking_ID_REF.txt')
+
+```
+
+Here you can [download]() my report the top 100 interactions (i.e. source, target, type of edge) their score and the statistical significance of the score.
 
 ### Functions of Regulating Genes
 
