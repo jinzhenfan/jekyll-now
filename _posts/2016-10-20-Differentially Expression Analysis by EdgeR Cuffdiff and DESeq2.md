@@ -42,7 +42,9 @@ Here we take brain cells and adrenal cells for example. We are using the same da
 
 ### Preprocessing
 
-A Python framework, named HTSeq, can be used to process and analyze alignment results from high-throughput sequencing (HTS) assays, which can be downloaded here. [https://pypi.python.org/pypi/HTSeq](https://pypi.python.org/pypi/HTSeq)
+A Python framework, named HTSeq, can be used to process and analyze alignment results from high-throughput sequencing (HTS) assays, which can be downloaded here. 
+[https://pypi.python.org/pypi/HTSeq](https://pypi.python.org/pypi/HTSeq)
+
 After mapping with TopHat on Galaxy, we can directly download the .bam files from TopHat, as we talked about in previous blog. Then use the following command to pre-process .bam files into count matrix. A Linux or Mac system is required in this step. Windows package haven't been made yet.
 
 ```
