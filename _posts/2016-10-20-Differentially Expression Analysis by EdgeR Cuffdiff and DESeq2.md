@@ -171,6 +171,7 @@ d123<-intersect(d12,d23)
 draw.triple.venn(100,100,100,length(d12),length(d23),length(d13),length(d123),category=c("Cuffdiff", "EdgeR", "DeSeq2"),euler.d=FALSE, scaled=FALSE)
 
 ```
+Venn Diagram:
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DEG/VennD.jpeg)
 
