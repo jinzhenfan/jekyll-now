@@ -5,8 +5,7 @@ category: analysis
 ---
 
 In this blog, I will talk about the following topics:
-
-* What is DEG and why DEG is such a popular topic
+* What is DEG and why it is so popular
 * What is the differences between Cuffdiff, EdgeR, and DESeq2
 * How to preprocess your data from the Sequencer
 * How to get DEG analysis results usign R packages
