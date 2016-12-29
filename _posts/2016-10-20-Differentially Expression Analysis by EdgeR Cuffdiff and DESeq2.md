@@ -90,7 +90,7 @@ Top 100 DEG generated can be found [here]().
 ### DESeq2 DEG analysis
 First we need to setup a colData file for design formula in DeSeq2 analysis as follows:
 
-|   | Parts |
+| --- | Parts |
 | ------------- | ------------- |
 | Adrenal  | Adrenal |
 | Brain  | Brain  |
