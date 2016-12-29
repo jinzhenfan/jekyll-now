@@ -8,7 +8,7 @@ In this blog, I will build a gene regulatory network from gene expression data u
 
 ### Datasets
 
-I use a dataset from a microarray experiment of _Escherichia coli K-12_ strain to investigate biofilm formation in the first 24 hours of the culture. 
+I use a dataset from a microarray experiment of _Escherichia coli K-12_ strain to investigate biofilm formation in the first 24 hours of the culture. You can [download the dataset here]().
 
 The paper that describes this experiment is the following:
 Domka J, Lee J, Bansal T, Wood TK. Temporal gene-expression in Escherichia coli K-12 biofilms. Environ Microbiol. 2007 Feb;9(2):332-46.
@@ -45,18 +45,13 @@ This method makes the assumption that the expression of each gene in a given con
 
 ### Gene Regulatory Network Inference using GENIE3
 
-Use the tool GENIE3, which can be downloaded from
-[http://homepages.inf.ed.ac.uk/vhuynht/software.html](http://homepages.inf.ed.ac.uk/vhuynht/software.html)
+Use the tool GENIE3, which can be downloaded from [http://homepages.inf.ed.ac.uk/vhuynht/software.html](http://homepages.inf.ed.ac.uk/vhuynht/software.html)
 
 My code Implementation:
 
 ```python
 import numpy as np
-import sys
-sys.path.append("E:\\Program_Files\\Strawberry\\My_script\\HW4\\GENIE3_python\\GENIE3_python")
 from GENIE3 import *
-#from numpy import loadtxt
-
 import pandas as pd
 df=pd.read_csv('GDS2768.csv',sep='\t',header=1)
 
