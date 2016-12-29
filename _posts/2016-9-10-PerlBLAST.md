@@ -8,20 +8,6 @@ BLAST is one of the most widely used bioinformatics algorithms for sequence sear
 
 [View the BLAST mainpage here](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
-### What is the difference between BLAST, BLAST 2, PSI-BLAST, FASTA? When should each of these been used (trade-offs)?
-
-The **FASTA** program follows a largely heuristic method which contributes to the high speed of its execution. It initially observes the pattern of word hits, word-to-word matches of a given length, and marks potential matches before performing a more time-consuming optimized search using a Smith-Waterman type of algorithm. FASTA cares about all of the common words in the database and query sequences that are listed in the k-letter word list. 
-
-**BLAST** is also a heuristic algorithm, but it select only the high-scoring words from a database to find optimal alignment. Thus, BLAST is more time-efficient than FASTA by searching only for the more significant patterns in the sequences, yet with comparative sensitivity.
-
-**BLAST2**, a newer version of BLAST, adopts a lower neighborhood word score threshold to maintain the same level of sensitivity for detecting sequence similarity. BLAST2 can save more time Therefore, the possible matching words list becomes longer. 
-
-Position-Specific Iterative BLAST (**PSI-BLAST**) is used to find distant relatives of a protein. First, a list of all closely related proteins is created. These proteins are combined into a general "profile" sequence, which summarizes significant features present in these sequences. A query against the protein database is then run using this profile, and a larger group of proteins is found. This larger group is used to construct another profile, and the process is repeated. By including related proteins in the search, PSI-BLAST is much more sensitive in picking up distant evolutionary relationships than a standard protein-protein BLAST. 
-
-In summary, when one want to explore distant evolutionary relationships of proteins, or find distant relatives of a protein, PSI-BLAST should be used. If one want to do a detailed search of optimal alignment of nucleotide or protein sequences in databases and not to miss any possible matches, FASTA should be used. However, it might take relatively long time. If one want to search for optimal alignments within a short period of time and narrow down the candidate pool, BLAST should be used. Further, if BLAST is not fast enough, and one does not care length of possible matching words list, BLAST2 can be adopted. 
-
-[Wikipedia](https://en.wikipedia.org/wiki/BLAST)
-
 
 ### Query K-mer Hashing
 
@@ -225,3 +211,19 @@ Press any key to continue ...
 
 ```
 [View the source code and sample data file here](https://github.com/jinzhenfan/jinzhenfan.github.io/tree/master/scripts/PerlBLAST)
+
+
+### What is the difference between BLAST, BLAST 2, PSI-BLAST, FASTA? When should each of these been used (trade-offs)?
+
+The **FASTA** program follows a largely heuristic method which contributes to the high speed of its execution. It initially observes the pattern of word hits, word-to-word matches of a given length, and marks potential matches before performing a more time-consuming optimized search using a Smith-Waterman type of algorithm. FASTA cares about all of the common words in the database and query sequences that are listed in the k-letter word list. 
+
+**BLAST** is also a heuristic algorithm, but it select only the high-scoring words from a database to find optimal alignment. Thus, BLAST is more time-efficient than FASTA by searching only for the more significant patterns in the sequences, yet with comparative sensitivity.
+
+**BLAST2**, a newer version of BLAST, adopts a lower neighborhood word score threshold to maintain the same level of sensitivity for detecting sequence similarity. BLAST2 can save more time Therefore, the possible matching words list becomes longer. 
+
+Position-Specific Iterative BLAST (**PSI-BLAST**) is used to find distant relatives of a protein. First, a list of all closely related proteins is created. These proteins are combined into a general "profile" sequence, which summarizes significant features present in these sequences. A query against the protein database is then run using this profile, and a larger group of proteins is found. This larger group is used to construct another profile, and the process is repeated. By including related proteins in the search, PSI-BLAST is much more sensitive in picking up distant evolutionary relationships than a standard protein-protein BLAST. 
+
+In summary, when one want to explore distant evolutionary relationships of proteins, or find distant relatives of a protein, PSI-BLAST should be used. If one want to do a detailed search of optimal alignment of nucleotide or protein sequences in databases and not to miss any possible matches, FASTA should be used. However, it might take relatively long time. If one want to search for optimal alignments within a short period of time and narrow down the candidate pool, BLAST should be used. Further, if BLAST is not fast enough, and one does not care length of possible matching words list, BLAST2 can be adopted. 
+
+[Wikipedia](https://en.wikipedia.org/wiki/BLAST)
+
