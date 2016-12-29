@@ -31,16 +31,16 @@ Our method makes the assumption that the expression of each gene in a given cond
 
 	b.  Build a Random Forests ensemble. 
 
-		i. Sample with replacement from the training set (B times); call these $X_b$, $Y_b$.
+		..1. Sample with replacement from the training set (B times); call these $X_b$, $Y_b$.
 
-		ii. Train a decision or regression tree fb on $X_b$, $Y_b$.
+		..2. Train a decision or regression tree fb on $X_b$, $Y_b$.
 
-		iii. At each candidate split in the learning process, a random subset of the features/attributes are selected. This process is sometimes called "feature bagging". In this case, different subsets of genes are selected.
+		..3. At each candidate split in the learning process, a random subset of the features/attributes are selected. This process is sometimes called "feature bagging". In this case, different subsets of genes are selected.
 
-		iv. Different algorithms use different metrics as criteria to split at each nodes, such as, Gini Impurity and information gain. (One example of training decision trees based on information gain:
+		..4. Different algorithms use different metrics as criteria to split at each nodes, such as, Gini Impurity and information gain. (One example of training decision trees based on information gain:
 [http://christianherta.de/lehre/dataScience/machineLearning/decision-trees.php](http://christianherta.de/lehre/dataScience/machineLearning/decision-trees.php))
 
-		v. Generally, after training, predictions for unseen samples $x'$ can be made by averaging the predictions from all the individual regression trees on $x'$, or by taking the majority vote in the case of decision trees.
+		..5. Generally, after training, predictions for unseen samples $x'$ can be made by averaging the predictions from all the individual regression trees on $x'$, or by taking the majority vote in the case of decision trees.
 
 	c. In this case, for a single tree, the overall importance of one variable is then computed by summing the importance measure of all tree nodes where this variable is used to split. 
 
