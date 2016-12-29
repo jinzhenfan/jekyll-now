@@ -177,6 +177,8 @@ Venn Diagram:
 
 We can clearly tell from the Venn Diagram that EdgeR and DeSeq2 has high similarity in DEG analysis results. Only 1 gene out of 100 is different from these two sets, which is APOC4-APOC and APOC4-APOC2. However, Only 44% of Cuffdiff results overlap with either EdgeR or DeSeq2. 
 
+### Information from the Venn Diagram 
+
 The reason is that Cuffdiff serves for different purposes comparing with the other two. Cuffdiff tries to identify the abundance of different transcripts across samples, assuming the experimental conditions are similar. However, EdgeR and DeSeq2 are tries to answer if the difference in total expression (total count of a gene including all its isoforms) you see between samples is solely due to experimental conditions or due to biological variance. Thus EdgeR and DeSeq2 are better at comparing multiple biological replicates. Also, the way to estimate dispersion parameters are different between Cuffdiff and EdgeR. Given more replicates, we can expect more similarity.  
 
 Thus Cuffdiff can be used for DEG analysis in samples with fewer replicates, and in cases where experimental conditions are the same. EdgeR and DeSeq2 can be used to deal with DEG analysis multiple experimental conditions controls. 
