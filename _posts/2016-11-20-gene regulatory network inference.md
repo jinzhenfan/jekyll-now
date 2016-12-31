@@ -66,9 +66,11 @@ get_link_list(VIM4, gene_names=gene_names_Ecoli,file_name='ranking_ID_REF.txt')
 
 Here you can [download](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RF/ranking_ID_REF_Top100.txt) my report the top 100 interactions (i.e. source, target, type of edge) their score and the statistical significance of the score.
 
-### Fuzzy clustering of Regulating Genes
+### Fuzzy Clustering of Regulating Genes
 
-Use the DAVID tool from [http://david.abcc.ncifcrf.gov/](http://david.abcc.ncifcrf.gov/) to find all functional categories of genes that relate to 100 interactions above. 
+Now we have the top 100 interactions. The next question is, what are the functions of these top regulating genes?
+
+You are recommended to use the fuzzy clustering tool, named DAVID from [http://david.abcc.ncifcrf.gov/](http://david.abcc.ncifcrf.gov/) to find all functional categories of genes that relate to 100 interactions above. 
 
 DAVID Functional Annotation Clustering uses a fuzzy clustering concept as functional classification by measuring relationships among the annotation terms on the basis of the degree of their coassociation with genes within the user's list to cluster somewhat heterogeneous, yet highly similar annotation into functional annotation groups. 
 
