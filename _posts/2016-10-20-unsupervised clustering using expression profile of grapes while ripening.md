@@ -51,8 +51,8 @@ k=10
 k=20
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/clustering/k20.png)
 
-### Future works
+### Results and Future works
 
-Below we report (a) the top 3 genes, (b) the cluster center, and (c) the number of genes in the cluster for a pivot study of gene expression profiles during grape ripening. Future works will include hierarchical clustering methods, and use BIC or AIC to calculate the number of clusters that optimize the objective functions.
+In this [link](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/Clustering/Q3-1.docx) I report (a) the top 3 genes, (b) the cluster center, and (c) the number of genes in the cluster for a pivot study of gene expression profiles during grape ripening. Future works will include hierarchical clustering methods, and use BIC or AIC to calculate the number of clusters that optimize the objective functions.
 
 
