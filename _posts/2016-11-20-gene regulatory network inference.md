@@ -66,7 +66,20 @@ get_link_list(VIM4, gene_names=gene_names_Ecoli,file_name='ranking_ID_REF.txt')
 
 Here you can [download](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RF/ranking_ID_REF_Top100.txt) my report the top 100 interactions (i.e. source, target, type of edge) their score and the statistical significance of the score.
 
-### Functions of Regulating Genes
+### Fuzzy clustering of Regulating Genes
+
+Use the DAVID tool from [http://david.abcc.ncifcrf.gov/](http://david.abcc.ncifcrf.gov/) to find all functional categories of genes that relate to 100 interactions above. 
+
+DAVID Functional Annotation Clustering uses a fuzzy clustering concept as functional classification by measuring relationships among the annotation terms on the basis of the degree of their coassociation with genes within the user¡¯s list to cluster somewhat heterogeneous, yet highly similar annotation into functional annotation groups. 
+
+Fuzzy clustering (also referred to as soft clustering) is a form of clustering in which each data point can belong to more than one cluster. Clustering or cluster analysis involves assigning data points to clusters (also called buckets, bins, or classes), or homogeneous classes, such that items in the same class or cluster are as similar as possible, while items belonging to different classes are as dissimilar as possible. Clusters are identified via similarity measures. These similarity measures include distance, connectivity, and intensity. **DAVID statistical guarantees** include Fold enrichment, %, Classification stringency, Enrichment score, P-value, and Benjamini. 
+
+**Results (categories and counts):**
+
+![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/RF/DAVID.png)
+
+
+
 
 
 
