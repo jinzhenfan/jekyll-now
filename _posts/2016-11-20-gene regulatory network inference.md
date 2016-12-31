@@ -80,10 +80,11 @@ Fuzzy clustering (also referred to as soft clustering) is a form of clustering i
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/RF/DAVID1.png)
 
+We can tell from the fuzzy clustering results, the top regulating genes falls into the categories of cytoplasmid, periplasmic, transmembrane, and biosynthesis of antibiotics, secondary metabolites, as well as amino acides£¨highlighted), which makes senses cause these data is collected during biofilm formation in the first 24 hours of the culture. 
 
+### Take-home Message
 
-
-
+Similarly, you can use GENIE3 framework to inference the gene regulatory network with your own data sets, and find out the categories of top regulating genes with DAVID tool. It might take some trial and errors to get it properly set up. But overall it is a very convenient tool. Good luck!
 
 
 
