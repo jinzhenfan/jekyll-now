@@ -78,7 +78,7 @@ Fuzzy clustering (also referred to as soft clustering) is a form of clustering i
 
 **Results (categories and counts):**
 
-![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/RF/DAVID.png)
+![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/RF/DAVID1.png)
 
 
 
