@@ -23,7 +23,7 @@ Being able to recognize differential gene expression, is a key to understanding 
 
 ### Algorithms and tools 
 
-In this blog, I will walk you through several algorithms that serves to answer the question that why cell from different tissues act differently, more specificly, which genes are expressed in one tissue but not in the other tissue. 
+In this blog, I will walk you through several algorithms that serve to answer the question that why cell from different tissues act differently, more specificly, which genes are expressed in one tissue but not in the other tissue. 
 
 **GALAXY** is a free public server for DEG analysis, which I have introduced in a previous [blog](https://jinzhenfan.github.io/RNA-Seq-Mapping-by-GALAXY/). Here I will mainly introduce **edgeR** and **DESeq2**. 
 
@@ -175,7 +175,7 @@ Venn Diagram:
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DEG/VennD.jpeg)
 
-We can clearly tell from the Venn Diagram that EdgeR and DeSeq2 has high similarity in DEG analysis results. Only 1 gene out of 100 is different from these two sets, which is APOC4-APOC and APOC4-APOC2. However, Only 44% of Cuffdiff results overlap with either EdgeR or DeSeq2. 
+We can clearly tell from the Venn Diagram that EdgeR and DeSeq2 have high similarity in DEG analysis results. Only 1 gene out of 100 is different from these two sets, which is APOC4-APOC and APOC4-APOC2. However, Only 44% of Cuffdiff results overlap with either EdgeR or DeSeq2. 
 
 ### Insignts for future DEG analysis 
 
