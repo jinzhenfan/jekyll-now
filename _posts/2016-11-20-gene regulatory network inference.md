@@ -79,8 +79,8 @@ Fuzzy clustering (also referred to as soft clustering) is a form of clustering i
 **Results (categories and counts):**
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/RF/DAVID1.png)
-
-We can tell from the fuzzy clustering results, the top regulating genes falls into the categories of cytoplasmid, periplasmic, transmembrane, and biosynthesis of antibiotics, secondary metabolites, as well as amino acides£¨highlighted), which makes senses cause these data is collected during biofilm formation in the first 24 hours of the culture. 
+9(
+We can tell from the fuzzy clustering results, the top regulating genes fall into the categories of cytoplasmid, periplasmic, transmembrane, and biosynthesis of antibiotics, secondary metabolites, as well as amino acides (highlighted), which makes sense because these data are collected during biofilm formation in the first 24 hours of the culture. 
 
 ### Take-home Message
 
