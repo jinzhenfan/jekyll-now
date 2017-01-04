@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Building Naive Bayes Classifiers for Natural Language Processing & Emotional Analysis of real-time Twitter Streaming #Pokemon Go# 
+title: Building Naive Bayes Classifiers for Natural Language Processing & Emotional Analysis and Visualization of real-time Twitter Streaming #Pokemon Go# 
 category: analysis
 ---
 
 People are getting crazy with Pokemon Go recently. Teenagers are wondering around along rivers and in parks to hunt. Grandma and Grandpa are driving out to catch rare ones. However, it is getting crazy. Some Pokemon fans are playing with their iPhones while driving on highway... So I wonder what the result will be like to do an emotional analysis on the topic of #Pokemon Go# on Twitter.
 
-In this blog, I will first build a web crawler to capture real-time tweets. Then tweets are filtered based on location and keywords, so that only tweets that contains keyword "Pokemon" and sent in US are left. Then I trained two Naive Bayes classifiers using two different corpus from nltk, the movie_reviews and twitter_samples, respectively. However, surprising results are found that the classifier trained by movie_reviews are more reliable, even the data sets are from Twitter. I will talk about them in details.
+In this blog, I will first build a web crawler to capture real-time tweets. Then tweets are filtered based on location and keywords, so that only tweets that contains keyword "Pokemon" and sent in US are left. Then I trained two Naive Bayes classifiers using two different corpus from nltk, the movie_reviews and twitter_samples, respectively. However, surprising results are found that the classifier trained by movie_reviews are more reliable, even the data sets are from Twitter. The analysis and visualization part are at the end of this blog.
+
+![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/Twitter/Picture1.png)
 
 ### Web Crawling for Real-Time Twitter Streaming
 
