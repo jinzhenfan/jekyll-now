@@ -64,6 +64,39 @@ myStreamListener = MyStreamListener(api)
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
 key_filtered_stream=myStream.filter(locations=[-127.597019, 32.375215, -0.953617,48.152158])
 ```
+Then all the filtered tweets are saved in a file named 13may.json.
+
+### Training the Naive Bayes Classifier for Emotional Analysis using Two Corpus
+
+In this part, we use the movie_reviews and twitter_samples corpus to train our natural language Naive Bayes Classifier. The training procedure are the same, so I only show the one for movie_reviews below. This is a separated script named movieReviews.py, in a subfolder sentiment.
+ 
+```python
+import nltk.classify.util
+from nltk.classify import NaiveBayesClassifier
+from nltk.corpus import movie_reviews
+#import word_feats.word_feats as WF
+import sentiment.word_feats.word_feats as WF
+def movie_pos_neg_classifier():
+    
+    negids = movie_reviews.fileids('neg')
+    posids = movie_reviews.fileids('pos')
+     
+    negfeats = [(WF.word_feats(movie_reviews.words(fileids=[f])), 'neg') for f in negids]
+    posfeats = [(WF.word_feats(movie_reviews.words(fileids=[f])), 'pos') for f in posids]
+     
+    negcutoff = int(len(negfeats)*3/4)
+    poscutoff = int(len(posfeats)*3/4)
+     
+    trainfeats = negfeats[:negcutoff] + posfeats[:poscutoff]
+    testfeats = negfeats[negcutoff:] + posfeats[poscutoff:]
+    print ('train on %d instances, test on %d instances' % (len(trainfeats), len(testfeats)))
+     
+    classifier = NaiveBayesClassifier.train(trainfeats)
+    print ('accuracy:', nltk.classify.util.accuracy(classifier, testfeats))    
+    return classifier
+movie_pos_neg_classifier().show_most_informative_features()
+```
+Now we have two classifiers ready for use on the real-time tweets on Pokemon Go.
 
 
 
