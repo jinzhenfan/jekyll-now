@@ -98,6 +98,24 @@ movie_pos_neg_classifier().show_most_informative_features()
 ```
 Now we have two classifiers ready for use on the real-time tweets on Pokemon Go.
 
+### Emotional Analysis of real-time Twitter Streaming #Pokemon Go# 
+
+With the datasets captured and two classifiers, we are going to implement the emotional analysis of these datasets with keyword #Pokemon#.
+
+First, we call these two classifiers somewhere in the main function. 
+```python
+clf0=Movie.movie_pos_neg_classifier()
+clf1=Twitt.twitter_pos_neg_classifier()
+```
+
+Within the __init__ of MyStreamListener, we add the following lines:
+```python
+        self.MoviePos=0
+        self.MovieNeg=0
+        self.TwittPos=0
+        self.TwittNeg=0
+
+```
 
 
 
