@@ -165,6 +165,17 @@ def word_feats(words):
     return dict([(stemmer.stem(word), True) for word in words if (word not in string.punctuation) and (word not in stop) and word.isdigit()==False])
 ```
 
+Now a much cleaner version of real-time tweets will be saved, along with the emotional tendency classification in the file named 13may.json. Also, the number of emotionally positive tweets and emotionally positive tweets will be counted and recorded.
+Each item looks like this:
+
+```
+I'd like to set off an incense with a lucky egg next to a Pok¨¦stop with a lure so I can double my XP and level up to 11. #PokemonGO
+Positive by moveie_review classifier
+Negative by tweeter_samples classifier
+```
+
+Here we go!
+
 
 
 
