@@ -4,16 +4,16 @@ title: Building Naive Bayes Classifiers for Natural Language Processing & Emotio
 category: analysis
 ---
 
-People are getting crazy with Pokemon Go recently. Teenagers are wondering around along rivers and in parks to hunt for Pokemons. Grandma and Grandpa are driving out to hunt for rare ones. However, more and more people think it is getting out of control. Some Pokemon fans are playing with their iPhones while driving on highway. So I wonder what the result will be like to do an emotional analysis on the topic of #Pokemon Go# on Twitter.
+People are getting crazy with Pokemon Go recently. Teenagers are wondering around along rivers and in parks to hunt. Grandma and Grandpa are driving out to catch rare ones. However, it is getting crazy. Some Pokemon fans are playing with their iPhones while driving on highway... So I wonder what the result will be like to do an emotional analysis on the topic of #Pokemon Go# on Twitter.
 
 In this blog, I will first build a web crawler to capture real-time tweets. Then tweets are filtered based on location and keywords, so that only tweets that contains keyword "#Pokemon" and sent in US are left. Then I trained two Naive Bayes classifiers using two different corpus from nltk, the movie_reviews and twitter_samples, respectively. However, surprising results are found that the classifier trained by movie_reviews are more reliable, even the data sets are from Twitter. I will talk about them in details.
 
 ### Web Crawling for Real-Time Twitter Streaming
 
-Here I use an easy-to-use Python library called tweepy for accessing the Twitter API. First of all, one must have access_token, and consumer_key to access the authorization. Then a StreamListener class will be buit to monitor the tweeter streaming. ANy newly posted tweets will triggert the on_status function in this lister. Within this on_status function, one can do filtering, natural language processing and classification. 
+Here I use an easy-to-use Python library called tweepy for accessing the Twitter API. First of all, one must have access_token, and consumer_key to access the authorization. Then a StreamListener class will be buit to monitor the tweeter streaming. Any newly posted tweets will triggert the on_status function in this listener. Within this on_status function, one can do filtering, natural language processing and classification. 
 To prevent overflow, one can either set a time limit or item number limit on the streaming. 
 
-Below is my Python code for the Tweeter API authorizatin part:
+Below is my Python code for the Tweeter API authorization part:
 ```python
 import tweepy
 import time
@@ -64,11 +64,12 @@ myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
 key_filtered_stream=myStream.filter(locations=[-127.597019, 32.375215, -0.953617,48.152158])
 ```
 
-Then all the filtered tweents are saved in a file named 13may.json.
+Then all the filtered tweets are saved in a file named 13may.json.
 
 ### Training the Naive Bayes Classifier for Emotional Analysis using Two Corpus
 
-In this part, we use the movie_reviews and twitter_samples corpus to train our natural language Naive Bayes Classifier. The training procedure are the same, so I only show the one for movie_reviews below. This is a seperated script named movieReviews.py, in a subfolder sentiment. 
+In this part, we use the movie_reviews and twitter_samples corpus to train our natural language Naive Bayes Classifier. The training procedure are the same, so I only show the one for movie_reviews below. This is a separated script named movieReviews.py, in a subfolder sentiment.
+ 
 ```python
 import nltk.classify.util
 from nltk.classify import NaiveBayesClassifier
@@ -171,14 +172,14 @@ Here we go!
 
 ### Analysis and Visualization
 
-I disovered that these classifiers trained by two different corpus generate many disparate classification results. So I intentionally collect 200 disparate classfication samples for analysis, and manually classify them for validation. Tweets that are too neutral or controversial to decide are passed. Evetually, 100 manually classified samples are generated. 
+I discovered that these classifiers trained by two different corpus generate many disparate classification results. So I intentionally collect 200 disparate classification samples for analysis, and manually classify them for validation. Tweets that are too neutral or controversial to decide are passed. Eventually, 100 manually classified samples are generated. 
  
 Eventually I use a visualization software called Tableau to have a deep look into the results. 
 
-#### Most Informative Words for Classfication
+#### Most Informative Words for Classification
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/Twitter/Picture1.png)
-It seems that the classifier trained by movie_review corpus relies on more sophiscated, formal and longer words. While, the one trained by twitter_samples corpus relies on more casual, short, and subtle words. 
+It seems that the classifier trained by movie_review corpus relies on more sophisticated, formal and longer words. While, the one trained by twitter_samples corpus relies on more casual, short, and subtle words. 
 
 #### An overview of the classification differences
 
@@ -192,8 +193,7 @@ It seems that the classifier trained by movie_review corpus relies on more sophi
 
 ### Pitfalls:
 
-Please note that Movie_review corpus gives most false prediction on texts including movements, jointed words and abbreviations. Like go, walk, yield, NotExaggerating, Lol. And 
-Tweeter_sample corpus gives more false prediction on texts including dirty words, like f**k, shit.
+Please note that Movie_review corpus gives most false prediction on texts including movements, jointed words and abbreviations. Like go, walk, yield, NotExaggerating, Lol. And Tweeter_samples corpus gives more false prediction on texts including dirty words, like f**k, shit, which can actually be positive sometime.
 
 
 
