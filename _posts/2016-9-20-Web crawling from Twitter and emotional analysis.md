@@ -98,7 +98,7 @@ movie_pos_neg_classifier().show_most_informative_features()
 ```
 Now we have two classifiers ready for use on the real-time tweets on Pokemon Go.
 
-### Emotional Analysis of real-time Twitter Streaming #Pokemon Go# 
+### Emotional Analysis of Real-time Twitter Streaming #Pokemon Go# 
 
 With the datasets captured and two classifiers, we are going to implement the emotional analysis of these datasets with keyword #Pokemon#.
 
@@ -118,7 +118,8 @@ Within the initialization function of MyStreamListener, we add the following lin
         self.TwittNeg=0
 ```
 
-The on_status function in MyStreamListener is changed to incorporate the real-time classifiers.  
+The on_status function in MyStreamListener is changed to incorporate the real-time classifiers. 
+ 
 ```python
     def on_status(self, status):
         if ('pokemon' in status.text.lower()):
@@ -150,7 +151,20 @@ Note that if the raw data fetched by tweepy API is a big mess. Each item include
 {"created_at":"Sun Jul 17 17:09:38 +0000 2016","id":754724754863423488,"id_str":"754724754863423488","text":"RT @OmgPokemonGo: when ur about to catch a rare pokemon but the game freezes https:\/\/t.co\/yAKyGRfFJK","source":"\u003ca href=\"https:\/\/about.twitter.com\/products\/tweetdeck\" rel=\"nofollow\"\u003eTweetDeck\u003c\/a
 ```
 
-So I add a word stemming function called word_feats in the above script, to get rid of numbers, ID, time, stop words, and punctuations with NLTK, after tokenizing text with status.text.split(). A stemmer called SnowballStemmer is used here. 
+So I add a word stemming function called word_feats in the above script, to get rid of numbers, ID, time, stop words, and punctuations with NLTK, after tokenizing text with status.text.split(). A built-in stemmer called SnowballStemmer is used here. 
+
+```python
+from nltk.corpus import stopwords
+from nltk.stem.snowball import SnowballStemmer
+import string
+###clean up punctuation, stopwords, numbers
+
+def word_feats(words):
+    stemmer=SnowballStemmer("english")
+    stop = stopwords.words('english')
+    return dict([(stemmer.stem(word), True) for word in words if (word not in string.punctuation) and (word not in stop) and word.isdigit()==False])
+```
+
 
 
 
