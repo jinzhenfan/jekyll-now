@@ -103,18 +103,43 @@ Now we have two classifiers ready for use on the real-time tweets on Pokemon Go.
 With the datasets captured and two classifiers, we are going to implement the emotional analysis of these datasets with keyword #Pokemon#.
 
 First, we call these two classifiers somewhere in the main function. 
+
 ```python
 clf0=Movie.movie_pos_neg_classifier()
 clf1=Twitt.twitter_pos_neg_classifier()
 ```
 
 Within the __init__ of MyStreamListener, we add the following lines:
+
 ```python
         self.MoviePos=0
         self.MovieNeg=0
         self.TwittPos=0
         self.TwittNeg=0
+```
 
+The on_status function in MyStreamListener is changed to incorporate the real-time classifiers.  
+```python
+    def on_status(self, status):
+        if ('pokemon' in status.text.lower()):
+            print (status.text)
+            sentiment_result_0=clf0.classify(WF.word_feats(status.text.split()))
+            sentiment_result_1=clf1.classify(WF.word_feats(status.text.split()))
+            if (sentiment_result_0=='neg'):
+                self.MovieNeg=self.MovieNeg+1
+            if (sentiment_result_0=='pos'):
+                self.MoviePos=self.MoviePos+1  
+            if (sentiment_result_1=='neg'):
+                self.TwittNeg=self.TwittNeg+1
+            if (sentiment_result_1=='pos'):
+                self.TwittPos=self.TwittPos+1
+            if (sentiment_result_0=='neg' and sentiment_result_1=='pos'):
+                print(sentiment_result_0,sentiment_result_1)       
+            self.n = self.n+1
+        if self.n < self.m: return True
+        else:
+            print ('tweets = '+str(self.n))
+            return False 
 ```
 
 
