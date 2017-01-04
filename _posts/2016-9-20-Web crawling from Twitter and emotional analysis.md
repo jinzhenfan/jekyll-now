@@ -173,6 +173,7 @@ I'd like to set off an incense with a lucky egg next to a Pokestop with a lure s
 Positive by moveie_review classifier
 Negative by tweeter_samples classifier
 ```
+
 ### Analysis and Visualization
 
 I discovered that these classifiers trained by two different corpus generate many disparate classification results. So I intentionally collect 200 disparate classification samples for analysis, and manually classify them for validation. Tweets that are too neutral or controversial to decide are passed. Eventually, 100 manually classified samples are generated. 
@@ -196,8 +197,7 @@ It seems that the classifier trained by movie_review corpus relies on more sophi
 
 ### Pitfalls:
 
-Please note that Movie_review corpus gives most false prediction on texts including movements, jointed words and abbreviations. Like go, walk, yield, NotExaggerating, Lol. And Tweeter_samples corpus gives more false prediction on texts including dirty words, like f**k, shit, which can actually be positive sometime.
-Here we go!
+Please note that Movie_review corpus gives most false prediction on texts including movements, jointed words and abbreviations. Like go, walk, yield, NotExaggerating, Lol. And Tweeter_samples corpus gives more false prediction on texts including dirty words, which can actually be positive sometimes.
 
 
 
