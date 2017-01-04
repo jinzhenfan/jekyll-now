@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Naive Bayes Classifiers for Natural Language Processing & Emotional Analysis and Visualization of real-time Twitter Streaming #Pokemon Go# 
+title: Building Naive Bayes Classifiers for Natural Language Processing & Emotional Analysis and Visualization of Real-time Twitter Streaming #Pokemon Go# 
 category: analysis
 ---
 
