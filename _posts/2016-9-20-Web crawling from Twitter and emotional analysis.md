@@ -109,7 +109,7 @@ clf0=Movie.movie_pos_neg_classifier()
 clf1=Twitt.twitter_pos_neg_classifier()
 ```
 
-Within the __init__ of MyStreamListener, we add the following lines:
+Within the initialization function of MyStreamListener, we add the following lines:
 
 ```python
         self.MoviePos=0
@@ -142,6 +142,15 @@ The on_status function in MyStreamListener is changed to incorporate the real-ti
             return False 
 ```
 
+### Word Stemming
+
+Note that if the raw data fetched by tweepy API is a big mess. Each item include the useless information such as ID, time, source, stopwords, punctuations, and etc. 
+
+```
+{"created_at":"Sun Jul 17 17:09:38 +0000 2016","id":754724754863423488,"id_str":"754724754863423488","text":"RT @OmgPokemonGo: when ur about to catch a rare pokemon but the game freezes https:\/\/t.co\/yAKyGRfFJK","source":"\u003ca href=\"https:\/\/about.twitter.com\/products\/tweetdeck\" rel=\"nofollow\"\u003eTweetDeck\u003c\/a
+```
+
+So I add a word stemming function called word_feats in the above script, to get rid of numbers, ID, time, stop words, and punctuations with NLTK, after tokenizing text with status.text.split(). A stemmer called SnowballStemmer is used here. 
 
 
 
