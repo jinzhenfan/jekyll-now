@@ -19,7 +19,7 @@ It is to be understood that the two formulas are motivated by differences in pro
 
 ### Plotting of reactivity profiles
 
-In the first step, I wrote an R script to obtain reactivities using the two approaches, plot the reactivity profiles. 
+In the first step, I wrote an R script to obtain reactivity using the two approaches, plot the reactivity profiles. 
 
 
 ```r
@@ -107,7 +107,7 @@ In the SHAPE-Seq experiment that was modeled by Aviran et al., a single primer t
 
 ### Take-home messages
 
-If uniformity of nucleotide-level coverage cannot be ensured, Aviran's method is more accurate, as it considers nucleotide-level coverage in the summation. As such, the change of nucleotide-level coverage will be reflected in Aviran's method, but not in Ding's formulation. If low (-) channel noise cannot be ensured, Ding's method will generate more reasonable values. Ding's method utilizes a logarithm-based approach, which will mitigate any extreme noise values. Aviran's approach, on the other hand, is derived based on low-noise assumption; as a result, it may overestimate the reactivities at high noise levels.
+If uniformity of nucleotide-level coverage cannot be ensured, Aviran's method is more accurate, as it considers nucleotide-level coverage in the summation. As such, the change of nucleotide-level coverage will be reflected in Aviran's method, but not in Ding's formulation. If low (-) channel noise cannot be ensured, Ding's method will generate more reasonable values. Ding's method utilizes a logarithm-based approach, which will mitigate any extreme noise values. Aviran's approach, on the other hand, is derived based on low-noise assumption; as a result, it may overestimate the reactivity at high noise levels.
 
 
 

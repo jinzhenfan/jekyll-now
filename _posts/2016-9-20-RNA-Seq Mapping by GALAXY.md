@@ -12,7 +12,7 @@ In this blog, I will walk you through GALAXY to analyze five RNA-Seq datasets.
 
 ### Overview
 
-The **GALAXY** Project is an open, web-based platform for data intensive biomedical research. Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses. It is supported in part by NHGRI, NSF, The Huck Institutes of the Life Sciences, The Institute for CyberScience at Penn State, and Johns Hopkins University. 
+The **GALAXY** Project is an open, web-based platform for data intensive biomedical research. Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses. It is supported in part by NHGRI, NSF, the Huck Institutes of the Life Sciences, the Institute for CyberScience at Penn State, and Johns Hopkins University. 
 
 The **datasets** we are using today are paired-end 50bp reads from adrenal and brain tissues (500Kb region of chromosome 19, chr19:3000000:3500000). The datasets contain the transcriptional profiles in those tissues and our task is to find genes that are differentially expressed (DEG) in the sample conditions versus the control sample. You can download the datasets [here](https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise). It is recommended to look through the tutorial in the same link for detailed steps. 
 
@@ -56,7 +56,7 @@ Eventually, we can sort and filter on the top 100 DEG, to get novel transcripts 
 
 [Download the Top 100 DEG here.](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/GALAXY/Top100DEGCuffDiff.txt)
 
-Have fun working with differetial gene expression!
+Have fun working with differential gene expression!
 
 
 

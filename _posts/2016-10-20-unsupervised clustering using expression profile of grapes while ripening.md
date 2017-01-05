@@ -13,7 +13,7 @@ There are several tool boxes to perform clustering, including the open source cl
 or WEKA, a collection of machine learning algorithms for data mining in Java that can be found here:
 [http://www.cs.waikato.ac.nz/ml/weka/](http://www.cs.waikato.ac.nz/ml/weka/)
 
-### Introduce Usupervised Clustering Packages in R
+### Introduce Unsupervised Clustering Packages in R
 
 For this exercise we will use the R statistical programming language and Bioconductor. The package "cluster" that we are using here is part of Bioconductor includes several methods for unsupervised clustering. We can use one of the methods _agnes_, _diana_ and
 _mona_ to perform hierarchical clustering and the methods _pam_, _clara_ and _fanny_, to perform partitioning (non-hierarchical clustering). The reference manual for the package is under cluster.pdf and can be accessed from:

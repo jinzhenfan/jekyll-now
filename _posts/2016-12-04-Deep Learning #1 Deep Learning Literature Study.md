@@ -20,7 +20,7 @@ As a matter of fact, researchers has been exploring different methods for predic
 
 Before taking a look into the model, one need to get a basic idea about how those input datasets are generated. $^{9-13}$
 
-![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/1.png "Experimental ways to collect DNA- RNA- binidng protein datasets")
+![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/1.png "Experimental ways to collect DNA- RNA- binding protein datasets")
 
 PBM utilizes microarray chips where an array of capture DNA strands is bound, typically labelled by probe molecules. ChIP methods works by forming and isolating immuno-complex at the binding sites, which works well in vivo. SELEX (systematic evolution of ligands by exponential enrichment) is a method to enrich small populations of bound DNAs from a random sequence pool by PCR amplification.
 
@@ -62,7 +62,7 @@ A recent enhancement of neural networks known as dropout is illustrated here. Th
 
 ### Training Objectives
 
-Our training objective is to minimize the following function $J$. This traning objective is a combination of loss function and $L1$ normalization of weight decays. It has a trend to minimize the weights in neural networks $\big( W, w \big)$ and motif arrays ($M$), by giving a penalty parameter $\beta$, unless the loss function is good enough to pay for the penalties. 
+Our training objective is to minimize the following function $J$. This training objective is a combination of loss function and $L1$ normalization of weight decays. It has a trend to minimize the weights in neural networks $\big( W, w \big)$ and motif arrays ($M$), by giving a penalty parameter $\beta$, unless the loss function is good enough to pay for the penalties. 
 
 ![alt text](https://rawgit.com/jinzhenfan/jinzhenfan.github.io/master/images/DeepLearningDNAbindingProteins/9.png)
 
