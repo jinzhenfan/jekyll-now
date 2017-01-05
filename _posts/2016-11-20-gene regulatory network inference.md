@@ -8,7 +8,7 @@ In this blog, I will build a gene regulatory network from gene expression data u
 
 ### Datasets
 
-I use a dataset from a microarray experiment of _Escherichia coli K-12_ strain to investigate biofilm formation in the first 24 hours of the culture. You can [download the dataset here](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RF/GDS2768.csv). This file contains 4633 rows and 10 columns. Each row include the gene ID, identifier, and the microarray data of one gene after 4, 7, 15, and 24 hours of incubation under two different conditions. The first two rows are headers are gene ID, experimental conditions and hours. These signal pathways of these 4631 genes forms a genetic regulatory network. We are going to infer the top regulating genes in this network that drive the biofilm formation process based on these data.  
+I use a dataset from a microarray experiment of _Escherichia coli K-12_ strain to investigate biofilm formation in the first 24 hours of the culture. You can [download the dataset here](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RF/GDS2768.csv). This file contains 4633 rows and 10 columns. Each row include the gene ID, identifier, and the microarray data of one gene after 4, 7, 15, and 24 hours of incubation under two different conditions. The two conditions are under biofilm and in suspension as a control. The first two rows are headers are gene ID, experimental conditions and hours. These signal pathways of these 4631 genes forms a genetic regulatory network. We are going to infer the top regulating genes in this network that drive the biofilm formation process based on these data.  
 
 
 The paper that describes this experiment is the following:
@@ -84,6 +84,8 @@ Fuzzy clustering (also referred to as soft clustering) is a form of clustering i
 We can tell from the fuzzy clustering results, the top regulating genes fall into the categories of cytoplasmid, periplasmic, transmembrane, and biosynthesis of antibiotics, secondary metabolites, as well as amino acids (highlighted), which makes sense because these data are collected during biofilm formation in the first 24 hours of the culture. 
 
 ### Take-home Message
+
+Using GENIE3 framework, we successfully found the top 100 gene regulating interaction in the network formed by 4631 gene expression over 24 h, based on the ranking given by random forests. A fuzzy clustering has been conducted to find out the main function categories of these top regulating genes. It took 30 min to run on my laptop.
 
 Similarly, you can use GENIE3 framework to inference the gene regulatory network with your own data sets, and find out the categories of top regulating genes with DAVID tool. It might take some trial and errors to get it properly set up. But overall it is a very convenient tool. Good luck!
 
