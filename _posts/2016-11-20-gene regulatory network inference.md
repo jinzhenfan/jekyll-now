@@ -8,7 +8,8 @@ In this blog, I will build a gene regulatory network from gene expression data u
 
 ### Datasets
 
-I use a dataset from a microarray experiment of _Escherichia coli K-12_ strain to investigate biofilm formation in the first 24 hours of the culture. You can [download the dataset here](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RF/GDS2768.csv).
+I use a dataset from a microarray experiment of _Escherichia coli K-12_ strain to investigate biofilm formation in the first 24 hours of the culture. You can [download the dataset here](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RF/GDS2768.csv). This file contains 4633 rows and 10 columns. Each row include the gene ID, identifier, and the microarray data of one gene after 4, 7, 15, and 24 hours of incubation under two different conditions. The first two rows are headers are gene ID, experimental conditions and hours. These signal pathways of these 4631 genes forms a genetic regulatory network. We are going to infer the top regulating genes in this network that drive the biofilm formation process based on these data.  
+
 
 The paper that describes this experiment is the following:
 Domka J, Lee J, Bansal T, Wood TK. Temporal gene-expression in Escherichia coli K-12 biofilms. Environ Microbiol. 2007 Feb;9(2):332-46.
