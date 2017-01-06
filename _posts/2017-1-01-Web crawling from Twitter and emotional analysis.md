@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Naive Bayes Classifiers for Natural Language Processing & Emotional Analysis of Real-time Twitter Streaming
+title: Natural Language Processing & Naive Bayes Classification of Real-time Twitter Streaming
 category: analysis
 ---
 

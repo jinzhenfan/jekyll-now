@@ -4,7 +4,11 @@ title: Random Forest based Gene Regulatory Network Inference during E.Coli Biofi
 category: analysis
 ---
 
-In this blog, I will build a gene regulatory network from E.Coli gene expression data during biofilm formation, using a method based on Random Forests, and perform a functional analysis for that network. 
+Which genes are dominating when bacteria are trying to from a film? In this blog, I will build a gene regulatory network from E.Coli gene expression data during biofilm formation, using a method based on Random Forests, and perform a functional analysis for that network. 
+
+### Background
+
+Biofilms are a community of microorganisms attached to a surface by polysaccharides, proteins, and nucleic acids. E. coli biofilm development is a complex process that leads to beautiful structures that are important for disease and for engineering applications. It remains a question that what genes are dominating when bacteria are trying to from a film? $^1$
 
 ### Datasets
 
@@ -89,6 +93,9 @@ Using GENIE3 framework, we successfully found the top 100 gene regulating intera
 
 Similarly, you can use GENIE3 framework to inference the gene regulatory network with your own data sets, and find out the categories of top regulating genes with DAVID tool. It might take some trial and errors to get it properly set up. But overall it is a very convenient tool. Good luck!
 
+### References: 
+
+1. Environ Microbiol. 2009 January ; 11(1): 1-15. doi:10.1111/j.1462-2920.2008.01768.x.
 
 
 
