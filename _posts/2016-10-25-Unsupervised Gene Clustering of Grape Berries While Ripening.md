@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unsupervised Clustering Using Expression Profile of Grapes While Ripening
+title: Unsupervised Gene Clustering of Grape Berries While Ripening
 category: analysis
 ---
 

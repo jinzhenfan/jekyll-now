@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Comparison of two RNA structure models based on SHAPE-Seq data 
+title: Comparison of two RNA Structure Models for Evaluating Nucleotide Variants
 category: analysis
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RNA-Seq Mapping by GALAXY
+title: RNA-Seq Mapping
 category: analysis
 ---
 

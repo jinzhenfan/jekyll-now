@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a toy BLAST search tool 
+title: Create a toy BLAST tool for Sequence Searching on Huge Databases
 category: analysis
 ---
 
