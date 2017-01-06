@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Blogs for data mining, machine learning, and visualization in genomics, bioinformatics, and sometimes social network. 
+Blogs for machine learning, data mining and visualization in genomics, bioinformatics, and sometimes social network. 
 Tools used includes various coding languages and public available databases.
 
 ### Contact me

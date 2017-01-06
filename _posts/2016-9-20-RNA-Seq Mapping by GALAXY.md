@@ -14,7 +14,10 @@ In this blog, I will walk you through GALAXY to analyze five RNA-Seq datasets.
 
 The **GALAXY** Project is an open, web-based platform for data intensive biomedical research. Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses. It is supported in part by NHGRI, NSF, the Huck Institutes of the Life Sciences, the Institute for CyberScience at Penn State, and Johns Hopkins University. 
 
-The **datasets** we are using today are paired-end 50bp reads from adrenal and brain tissues (500Kb region of chromosome 19, chr19:3000000:3500000). The datasets contain the transcriptional profiles in those tissues and our task is to find genes that are differentially expressed (DEG) in the sample conditions versus the control sample. You can download the datasets [here](https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise). It is recommended to look through the tutorial in the same link for detailed steps. 
+### Datasets
+
+Here we analysis the differentially expressed genes in brain cells and adrenal cells. The datasets are paired-end 50bp FASTQ Sanger reads from adrenal and brain tissues (500Kb region of chromosome 19, chr19:3000000:3500000). These pair-ended sequencing data contains 4 Sanger reads file in total in FASTQ format, one forward reads and one reverse reads for each tissue. Each reads file contains around 50,000 short reads. You can download the datasets here:
+[https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise](https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise). But it is recommended to import it to your own GALAXY account directly.
 
 ### Layout
 

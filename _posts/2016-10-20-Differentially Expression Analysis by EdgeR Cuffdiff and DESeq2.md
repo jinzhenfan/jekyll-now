@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Differentially Expression Analysis by Cuffdiff, EdgeR, and DESeq2 
+title: Analysis of Differentially Expression Genes in Adrenal and Brain Tissues
 category: analysis
 ---
 
@@ -20,25 +20,22 @@ Although every cell contains the same complete genome DNA, only a small percenta
 
 Being able to recognize differential gene expression, is a key to understanding the specific roles that a cell is playing, or cell mutation. Thus it is becoming crucial for understanding the initial development of diseases, such as cancers and diabetes, growth of organs in childhood, as well as monitoring the influence of environment change. The expression level of each RNA unit is measured by the number of sequenced fragments that map to the transcript, which is expected to correlate directly with its abundance level. 
 
+### Datasets
+
+Here we analysis the differentially expressed genes in brain cells and adrenal cells. The datasets are paired-end 50bp FASTQ Sanger reads from adrenal and brain tissues (500Kb region of chromosome 19, chr19:3000000:3500000). These pair-ended sequencing data contains 4 Sanger reads file in total in FASTQ format, one forward reads and one reverse reads for each tissue. Each reads file contains around 50,000 short reads. You can download the datasets here:
+[https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise](https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise). But it is recommended to pre-process and map them to human genome on GALAXY first, since the raw data is a mess.
 
 ### Algorithms and tools 
 
 In this blog, I will walk you through several algorithms that serve to answer the question that why cell from different tissues act differently, more specifically, which genes are expressed in one tissue but not in the other tissue. 
 
-**GALAXY** is a free public server for DEG analysis, which I have introduced in a previous [blog](https://jinzhenfan.github.io/RNA-Seq-Mapping-by-GALAXY/). Here I will mainly introduce **edgeR** and **DESeq2**. 
+**GALAXY** is a free public server for DEG analysis, which I have introduced in a previous [blog](https://jinzhenfan.github.io/RNA-Seq-Mapping-by-GALAXY/). Here in this blog I will mainly introduce **edgeR** and **DESeq2**. 
 
 R packages for edgeR can be found here.
 [http://www.bioconductor.org/packages/release/bioc/html/edgeR.html](http://www.bioconductor.org/packages/release/bioc/html/edgeR.html)
 
 R packages for DESeq2 can be found here.
 [http://bioconductor.org/packages/release/bioc/html/DESeq2.html](http://bioconductor.org/packages/release/bioc/html/DESeq2.html)
-
-
-### Datasets
-
-Here we take brain cells and adrenal cells for example. We are using the same data sets used in GALAXY blog. The datasets are paired-end 50bp reads from adrenal and brain tissues (500Kb region of chromosome 19, chr19:3000000:3500000). You can find the datasets here:
-[https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise](https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise)
-
 
 ### Preprocessing
 

@@ -6,7 +6,13 @@ category: analysis
 
 Due to the complexity of genomic datasets, the best approach to analyze data is often not clear from the beginning. In fact, several approaches and tools exist for analysis of most genomic datasets. Each approach is optimized and validated for specific datasets and may not be applicable across the board. However, due to lack of clear guidelines on when to use or not use an approach, data analysis teams sometimes end up taking suboptimal or even inapplicable approaches. This can lead to contradictory results between different studies on the same subjects. Such contradictions have to be resolved by careful examination of considerations/assumptions that may have motivated an approach.
 
-In this article, we compare the reactivity profiles obtained using the formula derived by Aviran et al., 2011 and another formula used by Ding et al., 2014. The maximum likelihood result obtained by Aviran et al can be found in the reference$^2$. Necessary details of Ding et al.'s research are given here but you are also encouraged to read the paper.$^1$ The data we use are SHAPE-Seq data sets from Ding's publication$^1$.
+In this article, we compare the reactivity profiles obtained using the formula derived by [Aviran et al., 2011](http://www.pnas.org/content/108/27/11069.full) and another formula used by [Ding et al., 2014](http://www.nature.com/nature/journal/v505/n7485/full/nature12756.html). The maximum likelihood result obtained by Aviran et al can be found in the reference$^2$. Necessary details of Ding et al.'s research are given here but you are also encouraged to read the paper.$^1$ The data we use are SHAPE-Seq data sets from Ding's publication$^1$.
+
+### Dataset
+
+The dataset I am using today is a SHAPE-Seq data of 173 nucleotide variants of the pT181 transcriptional attenuator. It contains 173 rows and 4 columns, which [can be downloaded here](https://github.com/jinzhenfan/jinzhenfan.github.io/blob/master/scripts/RNA-seq/pT181_Sense_112_adducts.txt). Each row contains information for one neucleotide position starting from 5' offset. The first column is nucleotide location (0-172). Second column are bases(ATGC). Third and forth columns are reactivity measured from treated and untreated samples. 
+
+### Algorithms
 
 For any structure-profiling experiment, as described by Aviran et al., read mapping results can be tallied and summarized as stop counts for each nucleotide. Consider a transcript of length $n$. Let us label the nucleotides with indices 1 through $n$ with 1 being the 3' end. For this transcript, there will be $n+1$ count summaries for each of the experiment and control channel, also called as (+) channel and (-) channel, respectively. These counts can be denoted as $\big( X_1,X_2,..., X_n \big) $ for number of stops in (+) channel at nucleotides 1 through $n$ and similarly as $\big(Y_1,Y_2,... ,Y_n\big)$ for (-) channel. Let  $X_{n+1}$ and $Y_{n+1}$ represent the number of reads that map to the 5' end. Then, the two formulas to assess reactivity $\beta _k$ of a nucleotide $k$ are 
 
@@ -110,4 +116,6 @@ In the SHAPE-Seq experiment that was modeled by Aviran et al., a single primer t
 If uniformity of nucleotide-level coverage cannot be ensured, Aviran's method is more accurate, as it considers nucleotide-level coverage in the summation. As such, the change of nucleotide-level coverage will be reflected in Aviran's method, but not in Ding's formulation. If low (-) channel noise cannot be ensured, Ding's method will generate more reasonable values. Ding's method utilizes a logarithm-based approach, which will mitigate any extreme noise values. Aviran's approach, on the other hand, is derived based on low-noise assumption; as a result, it may overestimate the reactivity at high noise levels.
 
 
-
+References:
+1. Nature 505, 696¨C700 (30 January 2014) doi:10.1038/nature12756
+2. PNAS July 5, 2011 vol. 108 no. 27 11069-11074

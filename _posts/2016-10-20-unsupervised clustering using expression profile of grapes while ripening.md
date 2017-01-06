@@ -4,8 +4,11 @@ title: Unsupervised Clustering Using Expression Profile of Grapes While Ripening
 category: analysis
 ---
 
-In this blog, we will do an unsupervised clustering using expression profile of grapes while ripening. The dataset we use is from a microarray experiment monitoring 16604 gene expression profile of Cabernet Sauvignon grape berry while ripening over 112 days. You can download it [here](https://github.com/jinzhenfan/jinzhenfan.github.io/tree/master/scripts/Clustering/Deluc_Grapes_Dataset1.txt). 
-The first row in the file is the header (geneID/days in time series). The paper that describes the methods and results is can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2220006/)(Deluc2007).
+In this blog, we will do an unsupervised clustering using expression profile of grapes while ripening. 
+
+### Dataset
+
+The dataset I am using is from a microarray experiment monitoring 16604 gene expression profile in whole fruit tissues of Cabernet Sauvignon grape berry while ripening over 112 days. Grape berry development is a dynamic process that involves a complex series of molecular genetic and biochemical changes. You can download the dataset [here](https://github.com/jinzhenfan/jinzhenfan.github.io/tree/master/scripts/Clustering/Deluc_Grapes_Dataset1.txt). This data set contains 16604 rows and 8 columns. Each row contains gene expression profile of one particular gene on 7 specific days(21th, 42th, 49th, 56th, 63th, 84th, and 112th). The first row in the file is the header (geneID/days in time series). The paper that describes the methods and results is can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2220006/)(Deluc2007). 
 
 
 There are several tool boxes to perform clustering, including the open source clustering software Cluster 3.0, which uses a Perl script for clustering that can be found here:
@@ -13,7 +16,7 @@ There are several tool boxes to perform clustering, including the open source cl
 or WEKA, a collection of machine learning algorithms for data mining in Java that can be found here:
 [http://www.cs.waikato.ac.nz/ml/weka/](http://www.cs.waikato.ac.nz/ml/weka/)
 
-### Introduce Unsupervised Clustering Packages in R
+### Unsupervised Clustering Tools
 
 For this exercise we will use the R statistical programming language and Bioconductor. The package "cluster" that we are using here is part of Bioconductor includes several methods for unsupervised clustering. We can use one of the methods _agnes_, _diana_ and
 _mona_ to perform hierarchical clustering and the methods _pam_, _clara_ and _fanny_, to perform partitioning (non-hierarchical clustering). The reference manual for the package is under cluster.pdf and can be accessed from:
@@ -21,7 +24,7 @@ _mona_ to perform hierarchical clustering and the methods _pam_, _clara_ and _fa
 [http://cran.r-project.org/web/packages/cluster/index.html](http://cran.r-project.org/web/packages/cluster/index.html)
 
 
-### Non-hierarchical Clustering/Partitioning
+### Non-hierarchical Clustering/Partitioning of Genes During Berry Development
 
 We use _pam_ to cluster the Deluc_Grapes_Dataset1, for number of clusters k=5,10,20. 
 
