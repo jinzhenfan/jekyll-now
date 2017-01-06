@@ -117,5 +117,5 @@ If uniformity of nucleotide-level coverage cannot be ensured, Aviran's method is
 
 
 References:
-1. Nature 505, 696¨C700 (30 January 2014) doi:10.1038/nature12756
+1. Nature 505, 696-700 (30 January 2014) doi:10.1038/nature12756
 2. PNAS July 5, 2011 vol. 108 no. 27 11069-11074
