@@ -4,11 +4,11 @@ title: Unsupervised Gene Clustering of Grape Berries While Ripening
 category: analysis
 ---
 
-In this blog, we will do an unsupervised clustering using expression profile of grapes while ripening. 
+Grape berry development is a dynamic process that involves a complex series of molecular genetic and biochemical changes. In this blog, we will do an unsupervised clustering using expression profile of grapes while ripening. 
 
 ### Dataset
 
-The dataset I am using is from a microarray experiment monitoring 16604 gene expression profile in whole fruit tissues of Cabernet Sauvignon grape berry while ripening over 112 days. Grape berry development is a dynamic process that involves a complex series of molecular genetic and biochemical changes. You can download the dataset [here](https://github.com/jinzhenfan/jinzhenfan.github.io/tree/master/scripts/Clustering/Deluc_Grapes_Dataset1.txt). This data set contains 16604 rows and 8 columns. Each row contains gene expression profile of one particular gene on 7 specific days(21th, 42th, 49th, 56th, 63th, 84th, and 112th). The first row in the file is the header (geneID/days in time series). The paper that describes the methods and results is can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2220006/)(Deluc2007). 
+The dataset I am using is from a microarray experiment monitoring 16604 gene expression profile in whole fruit tissues of Cabernet Sauvignon grape berry while ripening over 112 days. You can download the dataset [here](https://github.com/jinzhenfan/jinzhenfan.github.io/tree/master/scripts/Clustering/Deluc_Grapes_Dataset1.txt). This data set contains 16604 rows and 8 columns. Each row contains gene expression profile of one particular gene on 7 specific days(21th, 42th, 49th, 56th, 63th, 84th, and 112th). The first row in the file is the header (geneID/days in time series). The paper that describes the methods and results is can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2220006/)(Deluc2007). 
 
 
 There are several tool boxes to perform clustering, including the open source clustering software Cluster 3.0, which uses a Perl script for clustering that can be found here:

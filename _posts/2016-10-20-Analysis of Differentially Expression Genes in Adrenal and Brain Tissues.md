@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Analysis of Differentially Expression Genes in Adrenal and Brain Tissues
+title: Differential Gene Expression Analysis of Adrenal and Brain Tissues
 category: analysis
 ---
 
-In this blog, I will talk about the following topics:
+Differential Gene Expression, also known as DEG (Differentially expressed genes), is becoming a hot topic in fundenmental science research now, with the advancement of Next Generation Sequencing and single-cell isolation technology. In this blog, I will talk about the following topics:
 
 * What is DEG and why it is so popular
 * What is the differences between Cuffdiff, EdgeR, and DESeq2
@@ -14,7 +14,7 @@ In this blog, I will talk about the following topics:
 
 ### Background
 
-Differential Gene Expression, also known as DEG (Differentially expressed genes), is becoming a hot topic in fundenmental science research now, with the advancement of Next Generation Sequencing and single-cell isolation technology. The original question is, if the genome is the same in all somatic cells within an organism (with the exception of the above-mentioned lymphocytes), how do the cells become different from one another? How come that your red bllod cells produce hemoglobin, while your cardiomyocytes controls your heart beating? The answer is differential gene expression.
+The original question is, if the genome is the same in all somatic cells within an organism (with the exception of the above-mentioned lymphocytes), how do the cells become different from one another? How come that your red bllod cells produce hemoglobin, while your cardiomyocytes controls your heart beating? The answer is differential gene expression.
 
 Although every cell contains the same complete genome DNA, only a small percentage of the DNA is selectively expressed in each cell, therefore a specific portion of the RNA is synthesized in that cell type. For instance, if your body is a comparable to a country, then each cell is an individual person in this community. Before differential gene expression is studied, we only have the base knowledge of the country as a whole. The ultimate goal of differential gene expression is to obtain the portfolio the race, occupation, and personality of each individual. 
 

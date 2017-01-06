@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Building Naive Bayes Classifiers for Natural Language Processing & Emotional Analysis and Visualization of Real-time Twitter Streaming #Pokemon Go# 
+title: Building Naive Bayes Classifiers for Natural Language Processing & Emotional Analysis of Real-time Twitter Streaming
 category: analysis
 ---
 
-People are getting crazy with Pokemon Go recently. Teenagers are wondering around along rivers and in parks to hunt. Grandma and Grandpa are driving out to catch rare ones. However, it is getting crazy. Some Pokemon fans are playing with their iPhones while driving on highway... So I wonder what the result will be like to do an emotional analysis on the topic of #Pokemon Go# on Twitter.
+People are getting crazy with Pokemon Go recently. I wonder what the result will be like to do an emotional analysis on the topic of #Pokemon Go# on Twitter. 
+
+Teenagers are wondering around along rivers and in parks to hunt. Grandma and Grandpa are driving out to catch rare ones. However, it is getting crazy. Some Pokemon fans are playing with their iPhones while driving on highway. As an engineer, I found it difficult to explain. While a lot of funny tweets burst out, I am expecting to find interesting things from these tweets.
 
 In this blog, I will first build a web crawler to capture real-time tweets. Then tweets are filtered based on location and keywords, so that only tweets that contains keyword "Pokemon" and sent in US are left. Then I trained two Naive Bayes classifiers using two different corpus from nltk, the movie_reviews and twitter_samples, respectively. However, surprising results are found that the classifier trained by movie_reviews are more reliable, even the data sets are from Twitter. The analysis and visualization part are at the end of this blog.
 

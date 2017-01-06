@@ -4,7 +4,7 @@ title: Random Forest based Gene Regulatory Network Inference during E.Coli Biofi
 category: analysis
 ---
 
-In this blog, I will build a gene regulatory network from gene expression data using Random Forests and perform a functional analysis for that network. 
+In this blog, I will build a gene regulatory network from E.Coli gene expression data during biofilm formation, using a method based on Random Forests, and perform a functional analysis for that network. 
 
 ### Datasets
 

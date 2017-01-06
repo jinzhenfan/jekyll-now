@@ -4,7 +4,9 @@ title: Create a toy BLAST tool for Sequence Searching on Huge Databases
 category: analysis
 ---
 
-BLAST is one of the most widely used bioinformatics algorithms for sequence searching. It addresses a fundamental problem in bioinformatics research. The heuristic algorithm it uses is much faster than other approaches, such as calculating an optimal alignment. This emphasis on speed is vital to making the algorithm practical on the huge genome databases currently available. 
+BLAST is one of the most widely used bioinformatics algorithms for sequence searching. This emphasis on speed is vital to making the algorithm practical on the huge genome databases currently available. 
+
+The heuristic algorithm it uses is much faster than other approaches, such as calculating an optimal alignment. It addresses a fundamental problem in bioinformatics research. 
 
 [View the BLAST mainpage here](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
