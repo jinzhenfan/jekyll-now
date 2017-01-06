@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Natural Language Processing & Naive Bayes Classification of Real-time Twitter Streaming
+title: Random Forest based Gene Regulatory Network Inference during E.Coli Biofilm Formation
 category: analysis
 ---
 
