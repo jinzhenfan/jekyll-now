@@ -1,4 +1,4 @@
-## Blogs for machine learning, data mining and visualization in genomics, bioinformatics, and sometimes social network.
+## Blogs for machine learning applications in bioinformatics, genomics and social network.
 
 * Natural Language Processing & Naive Bayes Classification of Real-time Twitter Streaming
 
