@@ -4,7 +4,7 @@ title: Random Forest based Gene Regulatory Network Inference during E.Coli Biofi
 category: analysis
 ---
 
-Which genes are dominating when bacteria are trying to from a film? In this blog, I will build a gene regulatory network from E.Coli gene expression data during biofilm formation, using a method based on Random Forests, and perform a functional analysis for that network. 
+Which genes are dominating when bacteria are trying to form a film? In this blog, I will build a gene regulatory network from E.Coli gene expression data during biofilm formation, using a method based on Random Forests, and perform a functional analysis for that network. 
 
 ### Background
 
